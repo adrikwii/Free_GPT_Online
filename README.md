@@ -1,4 +1,4 @@
-![Logo]([https://www.pinterest.fr/pin/40884309110822420/](https://tse4.mm.bing.net/th/id/OIG2.SRrOr_vNEpcULvPM0wmu?pid=ImgGn))
+![Logo](https://tse4.mm.bing.net/th/id/OIG2.SRrOr_vNEpcULvPM0wmu?pid=ImgGn)
 # FREE GPT 
 
 Ce projet permet d'utiliser totalement gratuitement Chat GPT à l'aide du projet suivant [G4F API](https://github.com/xtekky/gpt4free) créé par [xtekky](https://github.com/xtekky).
