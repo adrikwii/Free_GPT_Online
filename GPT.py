@@ -7,7 +7,7 @@ col1, col2, col3 = st.columns(3)
 with col2 :
     col4,col5,col6 = st.columns(3)
     with col5:
-        st.title(":robot_face: Free_GPT :robot_face:",anchor=False)
+        st.title(":robot_face:Free_GPT:robot_face:",anchor=False)
 tab1,tab2 = st.tabs(["Text","Image"])
 with tab1 :
     with st.container() :
