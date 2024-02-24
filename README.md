@@ -1,5 +1,5 @@
 ## FREE GPT 
-<img src="https://tse1.mm.bing.net/th/id/OIG3.hfFogBjKKDkmcACkYNc0?pid=ImgGn" data-canonical-src="https://tse1.mm.bing.net/th/id/OIG3.hfFogBjKKDkmcACkYNc0?pid=ImgGn" width="250" height="500" />
+<img src="https://tse1.mm.bing.net/th/id/OIG3.hfFogBjKKDkmcACkYNc0?pid=ImgGn" data-canonical-src="https://tse1.mm.bing.net/th/id/OIG3.hfFogBjKKDkmcACkYNc0?pid=ImgGn" width="500" height="300" />
 
 
 Ce projet permet d'utiliser totalement gratuitement Chat GPT à l'aide du projet suivant [G4F API](https://github.com/xtekky/gpt4free) créé par [xtekky](https://github.com/xtekky).
