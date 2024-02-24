@@ -7,5 +7,5 @@ Pour la génération d'image le projet utilise [pollination.ai](https://pollinat
 
 ## Lien vers l'application
 
-- [FreeGPT](https://freegpt-am.streamlit.app/)
+- [FreeGPT](https://free-gpt.streamlit.app/)
 
