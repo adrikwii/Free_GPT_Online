@@ -11,7 +11,7 @@ with col2:
 ██─▄████─▄─▄██─▄█▀██─▄█▀████████─██▄─██─▄▄▄███─███
 ▀▄▄▄▀▀▀▄▄▀▄▄▀▄▄▄▄▄▀▄▄▄▄▄▀▀▀▀▀▀▀▀▄▄▄▄▄▀▄▄▄▀▀▀▀▄▄▄▀▀""")
 st.divider()
-tab1,tab2 = st.tabs(["Text",":camera_with_flash:Image:camera_with_flash:"])
+tab1,tab2 = st.tabs([":lower_left_ballpoint_pen: Text :lower_left_ballpoint_pen:",":camera_with_flash: Image :camera_with_flash:"])
 with tab1 :
     with st.container() :
         messages = st.container(height=300)
