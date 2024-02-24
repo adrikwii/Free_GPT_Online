@@ -6,7 +6,8 @@ st.set_page_config(page_title="Free_GPT",page_icon=":robot_face:",layout="wide")
 col1, col2, col3 = st.columns(3)
 col4,col5,col6 = st.columns(3)
 with col2:
-    st.text("""
+    with col5:
+        st.text("""
 ╭━━━┳━━━┳━━━┳━━━╮╱╭━━━┳━━━┳━━━━╮
 ┃╭━━┫╭━╮┃╭━━┫╭━━╯╱┃╭━╮┃╭━╮┃╭╮╭╮┃
 ┃╰━━┫╰━╯┃╰━━┫╰━━╮╱┃┃╱╰┫╰━╯┣╯┃┃╰╯
