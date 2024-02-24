@@ -30,3 +30,8 @@ with tab2 :
         Image.chat_message("user").write(generationPic)
         response =  "https://image.pollinations.ai/prompt/"+generationPic
         Image.chat_message("assistant").image(response,width=400)
+col4, col5, col6 = st.columns(3)
+st.divider()
+with col6:
+    st.text("Dévelopée par A/M['https://github.com/adrikwii']")
+    
