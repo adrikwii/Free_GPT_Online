@@ -17,7 +17,7 @@ with tab1 :
             response = g4f.ChatCompletion.create(
                     model=g4f.models.gpt_4,
                     messages=[{"role": "user", "content": prompt}],
-                    stream=True
+                    stream=True,
                     )
             messages.chat_message("assistant").write(response)
 with tab2 :
