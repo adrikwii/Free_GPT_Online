@@ -37,5 +37,5 @@ with tab2 :
 col4, col5, col6 = st.columns(3)
 st.divider()
 with col6:
-    st.write("                    Dévelopée par [Adrien Metton](https://github.com/adrikwii)")
+    st.write("                                                    Dévelopée par [Adrien Metton](https://github.com/adrikwii)")
     
