@@ -1,7 +1,6 @@
 import streamlit as st
 import g4f
 
-st.text("hey")
 st.set_page_config(page_title="Free_GPT",page_icon=":robot_face:",layout="wide")
 col1, col2, col3 = st.columns(3)
 with col2:
@@ -11,6 +10,7 @@ with col2:
 ██─▄████─▄─▄██─▄█▀██─▄█▀████████─██▄─██─▄▄▄███─███
 ▀▄▄▄▀▀▀▄▄▀▄▄▀▄▄▄▄▄▀▄▄▄▄▄▀▀▀▀▀▀▀▀▄▄▄▄▄▀▄▄▄▀▀▀▀▄▄▄▀▀""")
 st.divider()
+tab1,tab2 = st.tabs([":lower_left_ballpoint_pen: Text :lower_left_ballpoint_pen:",":camera_with_flash: Image :camera_with_flash:"])
 st.markdown("""
 <style>
 
@@ -33,7 +33,6 @@ st.markdown("""
 	}
 
 </style>""", unsafe_allow_html=True)
-tab1,tab2 = st.tabs([":lower_left_ballpoint_pen: Text :lower_left_ballpoint_pen:",":camera_with_flash: Image :camera_with_flash:"])
 with tab1 :
     with st.container() :
         messages = st.container(height=300)
