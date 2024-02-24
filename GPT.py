@@ -24,7 +24,7 @@ with tab1 :
                     stream=True,
                     )
             messages.chat_message("assistant").write(response)
-            st.toast('Terminée :smile:')
+            st.toast('Terminé :smile:')
 with tab2 :
     Image = st.container(height=550)
     if generationPic := st.chat_input("Image"):
@@ -32,10 +32,10 @@ with tab2 :
         st.toast('En cours de génération ...')
         response =  "https://image.pollinations.ai/prompt/"+generationPic
         Image.chat_message("assistant").image(response,width=400)
-        st.toast('Terminée :smile:')
+        st.toast('Terminé :smile:')
 col4, col5, col6 = st.columns(3)
 with col6:
     col7, col8 = st.columns(2)
     with col8:
-        st.write("Dévelopée par [adrikwii](https://github.com/adrikwii)")
+        st.write("Dévelopé par [adrikwii](https://github.com/adrikwii)")
     
