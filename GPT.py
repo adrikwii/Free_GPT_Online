@@ -12,6 +12,28 @@ with col2:
 ▀▄▄▄▀▀▀▄▄▀▄▄▀▄▄▄▄▄▀▄▄▄▄▄▀▀▀▀▀▀▀▀▄▄▄▄▄▀▄▄▄▀▀▀▀▄▄▄▀▀""")
 st.divider()
 tab1,tab2 = st.tabs([":lower_left_ballpoint_pen: Text :lower_left_ballpoint_pen:",":camera_with_flash: Image :camera_with_flash:"])
+st.markdown("""
+<style>
+
+	.stTabs [data-baseweb="tab-list"] {
+		gap: 2px;
+    }
+
+	.stTabs [data-baseweb="tab"] {
+		height: 50px;
+        white-space: pre-wrap;
+		background-color: #F0F2F6;
+		border-radius: 4px 4px 0px 0px;
+		gap: 1px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+    }
+
+	.stTabs [aria-selected="true"] {
+  		background-color: #FFFFFF;
+	}
+
+</style>""", unsafe_allow_html=True)
 with tab1 :
     with st.container() :
         messages = st.container(height=300)
