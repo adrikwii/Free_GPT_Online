@@ -22,7 +22,7 @@ with tab1 :
                     provider=g4f.Provider.You,
                     messages=[{"role": "user", "content": prompt}],
                     stream=True,
-                    )
+                    ) 
             messages.chat_message("assistant").write(response)
             st.toast('Terminé :smile:')
 with tab2 :
