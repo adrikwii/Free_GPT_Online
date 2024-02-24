@@ -7,7 +7,7 @@ col1, col2, col3 = st.columns(3)
 with col2 :
     col4,col5,col6 = st.columns(3)
     with col5:
-        st.title("Free_GPT",anchor=False)
+        st.title(":rainbow[Free_GPT]",anchor=False)
 tab1,tab2 = st.tabs(["Text","Image"])
 with tab1 :
     with st.container() :
