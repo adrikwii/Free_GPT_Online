@@ -4,14 +4,14 @@ import g4f
 
 st.set_page_config(page_title="Free_GPT",page_icon=":robot_face:",layout="wide")
 col1, col2, col3 = st.columns(3)
-col4,col5,col6 = st.columns(3)
 with col2:
-    st.text(""":red[
+    st.text("""
 ████████████████████████████████████▀█████████████
 █▄─▄▄─█▄─▄▄▀█▄─▄▄─█▄─▄▄─█▀▀▀▀▀██─▄▄▄▄█▄─▄▄─█─▄─▄─█
 ██─▄████─▄─▄██─▄█▀██─▄█▀████████─██▄─██─▄▄▄███─███
-▀▄▄▄▀▀▀▄▄▀▄▄▀▄▄▄▄▄▀▄▄▄▄▄▀▀▀▀▀▀▀▀▄▄▄▄▄▀▄▄▄▀▀▀▀▄▄▄▀▀]""")
+▀▄▄▄▀▀▀▄▄▀▄▄▀▄▄▄▄▄▀▄▄▄▄▄▀▀▀▀▀▀▀▀▄▄▄▄▄▀▄▄▄▀▀▀▀▄▄▄▀▀""")
 tab1,tab2 = st.tabs(["Text","Image"])
+st.divider()
 with tab1 :
     with st.container() :
         messages = st.container(height=300)
