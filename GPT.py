@@ -34,8 +34,8 @@ with tab2 :
         response =  "https://image.pollinations.ai/prompt/"+generationPic
         Image.chat_message("assistant").image(response,width=400)
         st.toast('Terminée :smile:')
-col4, col5, col6 = st.columns(3)
 st.divider()
+col4, col5, col6 = st.columns(3)
 with col6:
     col7, col8 = st.columns(2)
     with col8:
