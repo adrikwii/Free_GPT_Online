@@ -37,5 +37,5 @@ with tab2 :
 col4, col5, col6 = st.columns(3)
 st.divider()
 with col6:
-    st.text("Dévelopée par A/M['https://github.com/adrikwii']")
+    st.text("Dévelopée par :blue[A/M][link](https://github.com/adrikwii))
     
