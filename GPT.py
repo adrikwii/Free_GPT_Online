@@ -5,13 +5,13 @@ import g4f
 st.set_page_config(page_title="Free_GPT",page_icon=":robot_face:",layout="wide")
 col1, col2, col3 = st.columns(3)
 col4,col5,col6 = st.columns(3)
-st.header("""
+st.text("""
 ╭━━━┳━━━┳━━━┳━━━╮╱╭━━━┳━━━┳━━━━╮
 ┃╭━━┫╭━╮┃╭━━┫╭━━╯╱┃╭━╮┃╭━╮┃╭╮╭╮┃
 ┃╰━━┫╰━╯┃╰━━┫╰━━╮╱┃┃╱╰┫╰━╯┣╯┃┃╰╯
 ┃╭━━┫╭╮╭┫╭━━┫╭━┳┻━┫┃╭━┫╭━━╯╱┃┃
 ┃┃╱╱┃┃┃╰┫╰━━┫╰━┻┳━┫╰┻━┃┃╱╱╱╱┃┃
-╰╯╱╱╰╯╰━┻━━━┻━━━╯╱╰━━━┻╯╱╱╱╱╰╯""",anchor=False,divider='rainbow')
+╰╯╱╱╰╯╰━┻━━━┻━━━╯╱╰━━━┻╯╱╱╱╱╰╯""")
 tab1,tab2 = st.tabs(["Text","Image"])
 with tab1 :
     with st.container() :
