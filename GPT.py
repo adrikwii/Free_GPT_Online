@@ -37,5 +37,5 @@ col4, col5, col6 = st.columns(3)
 with col6:
     col7, col8 = st.columns(2)
     with col8:
-        st.write("Dévelopée par [Adrien Metton](https://github.com/adrikwii)")
+        st.write("Dévelopée par [adrikwii](https://github.com/adrikwii)")
     
