@@ -28,7 +28,9 @@ with tab2 :
     Image = st.container(height=550)
     if generationPic := st.chat_input("Image"):
         Image.chat_message("user").write(generationPic)
+        st.toast('En cours de génération ...')
         response =  "https://image.pollinations.ai/prompt/"+generationPic
+        st.toast('Terminée :smile:')
         Image.chat_message("assistant").image(response,width=400)
 col4, col5, col6 = st.columns(3)
 st.divider()
