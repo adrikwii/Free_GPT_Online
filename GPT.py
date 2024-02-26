@@ -20,7 +20,7 @@ streamlit_style = """
 					opacity: 0.9;
 					background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #363333 23px ), repeating-linear-gradient( #00000055, #000000 );
 				}
-				.st-af st-ag st-ah st-ai st-aj st-ak st-al st-am st-an st-ao st-ap st-aq st-ar
+				.st-ae
 				{
 					justify-content: center;
 				}
