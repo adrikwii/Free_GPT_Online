@@ -73,7 +73,7 @@ st.text("""
 █▄─▄▄─█▄─▄▄▀█▄─▄▄─█▄─▄▄─█▀▀▀▀▀██─▄▄▄▄█▄─▄▄─█─▄─▄─█
 ██─▄████─▄─▄██─▄█▀██─▄█▀████████─██▄─██─▄▄▄███─███
 ▀▄▄▄▀▀▀▄▄▀▄▄▀▄▄▄▄▄▀▄▄▄▄▄▀▀▀▀▀▀▀▀▄▄▄▄▄▀▄▄▄▀▀▀▀▄▄▄▀▀""")
-tab1,tab2 = st.tabs(["Texte","Image"])
+tab1,tab2 = st.tabs(["  Texte  ","  Image  "])
 with tab1 :
 	with st.container() :
 		messages = st.container(height=425)
