@@ -38,15 +38,15 @@ streamlit_style = """
 				/* Div affichage question-rep */
 				[class="st-emotion-cache-cim3f e1f1d6gn0"]
 				{
-					background-color: rgb(35 37 44);
-    				opacity: 100%;
+					
+					background-color: #363333;
+
 				}
 
 				/* Div Question utilisateur */
 				[class="stChatMessage st-emotion-cache-janbn0 eeusbqq4"]
 				{
-					background-color: #363333;
-					opacity: 100%;
+					background-color: rgb(35 37 44);
 				}
 			</style>
 			"""
