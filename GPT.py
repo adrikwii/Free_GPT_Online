@@ -10,10 +10,16 @@ if not "historique" in st.session_state:
 st.set_page_config(page_title="Free_GPT",page_icon="Icon/Logo.png",layout="wide")
 streamlit_style = """
 			<style>
-				[data-testID="stApp"]{
+				[data-testID="stApp"]
+				{
 					background-color: #363333;
 					opacity: 0.9;
 					background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #363333 23px ), repeating-linear-gradient( #00000055, #000000 );
+				}
+
+				[data-testID="stVerticalBlockBorderWrapper]
+				{
+					background-color: rgb(35 37 44);
 				}
 			</style>
 			"""
