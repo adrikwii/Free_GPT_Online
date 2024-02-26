@@ -19,7 +19,7 @@ streamlit_style = """
 
 				[data-testID="stVerticalBlockBorderWrapper]
 				{
-					background-color: rgb(35 37 44);
+					background: rgb(35 37 44);
 				}
 			</style>
 			"""
