@@ -61,7 +61,7 @@ streamlit_style = """
 					background-color: rgb(35 37 44);
 				}
 				/* Sponsor */
-				[class="styles_terminalButton__JBj5T"]
+				[data-testID="manage-app-button"]
 				{
 					opacity: 0%;
 				}
