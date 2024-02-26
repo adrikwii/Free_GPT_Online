@@ -61,10 +61,10 @@ streamlit_style = """
 					background-color: rgb(35 37 44);
 				}
 				/* Img Bot User */
-				[class"st-emotion-cache-p4micv eeusbqq0"]
+				[class="st-emotion-cache-p4micv eeusbqq0"]
 				{
-					width: 5rem;
-    				height: 5rem;
+					width: 3rem;
+    				height: 3rem;
 				}
 			</style>
 			"""
