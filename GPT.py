@@ -10,10 +10,10 @@ st.set_page_config(page_title="Free_GPT",page_icon=":robot_face:",layout="wide")
 streamlit_style = """
 			<style>
 			@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-   			html{overflow-y: hidden;}
 
 			html, body, [class*="css"]  {
 			font-family: 'Roboto', sans-serif;
+   			overflow: hidden; /* Hide scrollbars */
 			}
 			</style>
 			"""
