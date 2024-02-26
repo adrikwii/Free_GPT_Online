@@ -1,9 +1,19 @@
 import streamlit as st
 import g4f
 
-
 if not "historique" in st.session_state:
     st.session_state.historique = []
+	
+def afficher_historique():
+	if (st.session_state.historique != []):
+		for ligne in st.session_state.historique:
+			i = 0
+			for colonne in ligne:
+				if i == 0:
+					messages.chat_message("user",avatar="Icon/utilisateur.png").write(colonne)
+				else:
+					messages.chat_message("assistant",avatar="Icon/robot.png").write(colonne)
+				i += 1
 
     
 st.set_page_config(page_title="Free_GPT",page_icon=":robot_face:",layout="wide")
@@ -29,17 +39,10 @@ st.divider()
 tab1,tab2 = st.tabs([":lower_left_ballpoint_pen: Texte :lower_left_ballpoint_pen:",":camera_with_flash: Image :camera_with_flash:"])
 with tab1 :
 	with st.container() :
+		afficher_historique()
 		messages = st.container(height=300)
 		if prompt := st.chat_input("Question"):
-			if (st.session_state.historique != []):
-				for ligne in st.session_state.historique:
-					i = 0
-					for colonne in ligne:
-						if i == 0:
-							messages.chat_message("user",avatar="Icon/utilisateur.png").write(colonne)
-						else:
-							messages.chat_message("assistant",avatar="Icon/robot.png").write(colonne)
-						i += 1
+			afficher_historique()
 			messages.chat_message("user",avatar="Icon/utilisateur.png").write(prompt)
 			st.toast('En cours de génération ...')
 			with messages.chat_message("assistant",avatar="Icon/robot.png"):
