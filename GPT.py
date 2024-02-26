@@ -28,7 +28,7 @@ with tab1 :
                         i += 1
             messages.chat_message("user",avatar="Icon/utilisateur.png").write(prompt)
             st.toast('En cours de génération ...')
-            with  messages.chat_message.spinner("..."):
+            with  st.spinner(""):
                 response = g4f.ChatCompletion.create(
                     model=g4f.models.gpt_4,
                     provider=g4f.Provider.You,
