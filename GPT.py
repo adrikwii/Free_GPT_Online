@@ -10,18 +10,15 @@ if not "historique" in st.session_state:
 st.set_page_config(page_title="Free_GPT",page_icon="Icon/Logo.png",layout="wide")
 streamlit_style = """
 			<style>
-			@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-
-			html, body, [class*="css"]  {
-   				font-family: 'Roboto', sans-serif;
-   				margin-top: 0;
-			}
+				[data-testID="root"]{
+					background-color: #363333;
+					opacity: 0.9;
+					background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #363333 23px ), repeating-linear-gradient( #00000055, #000000 );
+				}
 			</style>
 			"""
 st.markdown(streamlit_style, unsafe_allow_html=True)
 col1, col2, col3 = st.columns(3)
-with col1:
-	st.image("Icon/Logo.png",width=100)
 with col2:
     st.text("""
 ████████████████████████████████████▀█████████████
