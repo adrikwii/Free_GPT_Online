@@ -18,7 +18,7 @@ with tab1 :
         messages = st.container(height=300)
         if prompt := st.chat_input("Say something"):
             if (st.session_state.historique != []):
-                for ligne in st.session_state.historique.historique:
+                for ligne in st.session_state.historique:
                     i = 0
                     for colonne in ligne:
                         if i == 0:
