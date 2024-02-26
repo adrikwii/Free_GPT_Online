@@ -15,7 +15,7 @@ with tab1 :
     with st.container() :
         messages = st.container(height=300)
         if prompt := st.chat_input("Say something"):
-            messages.chat_message("user").write(prompt)
+            messages.chat_message("user",avatar="Icon/utilisateur.png").write(prompt)
             st.toast('En cours de génération ...')
             response = g4f.ChatCompletion.create(
                     model=g4f.models.gpt_4,
