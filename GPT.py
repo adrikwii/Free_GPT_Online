@@ -24,7 +24,7 @@ with tab1 :
                             messages.chat_message("user",avatar="Icon/utilisateur.png").write(colonne)
                         else:
                             messages.chat_message("assistant",avatar="Icon/robot.png").write(colonne)
-                        i++
+                        i += 1
             messages.chat_message("user",avatar="Icon/utilisateur.png").write(prompt)
             st.toast('En cours de génération ...')
             response = g4f.ChatCompletion.create(
