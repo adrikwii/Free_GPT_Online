@@ -21,6 +21,7 @@ streamlit_style = """
 					background-color: #363333;
 					opacity: 0.9;
 					background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #363333 23px ), repeating-linear-gradient( #00000055, #000000 );
+					margin-top: -80px;
 				}
 
 				/* Title */
