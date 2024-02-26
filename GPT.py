@@ -34,11 +34,8 @@ with tab1 :
                     messages=[{"role": "user", "content": prompt}],
                     stream=True,
                     )
-            st.session_state.historique.append([prompt,(g4f.ChatCompletion.create(
-                    model=g4f.models.gpt_4,
-                    provider=g4f.Provider.You,
-                    messages=[{"role": "user", "content": prompt}]))])
-            messages.chat_message("assistant",avatar="Icon/robot.png").write(response)
+            rep = messages.chat_message("assistant",avatar="Icon/robot.png").write(response)
+            st.session_state.historique.append([prompt,rep])
             st.toast('Terminé :smile:')
             rep = response
     st.write(st.session_state.historique)
