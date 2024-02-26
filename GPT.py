@@ -8,7 +8,7 @@ if not "historique" in st.session_state:
 st.set_page_config(page_title="Free_GPT",page_icon=":robot_face:",layout="wide")
 col1, col2, col3 = st.columns(3)
 with col2:
-    st.image("Icon/Logo.jpeg")
+    st.image("Icon/Logo.jpeg",width=400)
     st.text("""
 ████████████████████████████████████▀█████████████
 █▄─▄▄─█▄─▄▄▀█▄─▄▄─█▄─▄▄─█▀▀▀▀▀██─▄▄▄▄█▄─▄▄─█─▄─▄─█
