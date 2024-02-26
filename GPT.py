@@ -75,7 +75,6 @@ st.text("""
 █▄─▄▄─█▄─▄▄▀█▄─▄▄─█▄─▄▄─█▀▀▀▀▀██─▄▄▄▄█▄─▄▄─█─▄─▄─█
 ██─▄████─▄─▄██─▄█▀██─▄█▀████████─██▄─██─▄▄▄███─███
 ▀▄▄▄▀▀▀▄▄▀▄▄▀▄▄▄▄▄▀▄▄▄▄▄▀▀▀▀▀▀▀▀▄▄▄▄▄▀▄▄▄▀▀▀▀▄▄▄▀▀""")
-st.divider()
 tab1,tab2 = st.tabs([":lower_left_ballpoint_pen: Texte :lower_left_ballpoint_pen:",":camera_with_flash: Image :camera_with_flash:"])
 with tab1 :
 	with st.container() :
