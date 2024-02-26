@@ -42,7 +42,7 @@ streamlit_style = """
 					background-color: #363333;
     				border-radius: 50px;
 				}
-				[class="st-emotion-cache-sh2krr p"]
+				[class="st-emotion-cache-sh2krr e1nzilvr5"]
 				{
 					font-size:32px;
 				}
