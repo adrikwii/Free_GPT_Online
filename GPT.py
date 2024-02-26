@@ -44,7 +44,7 @@ streamlit_style = """
 				}
 				.st-emotion-cache-sh2krr p
 				{
-					font-size:32px;
+					font-size:25px;
 				}
 				[class="st-as st-at st-au st-av st-aw st-ax st-ay st-az st-b0 st-b1 st-b2 st-b3 st-b4 st-b5 st-b6 st-b7 st-b8 st-b9 st-ba st-bb st-bc st-bd st-be st-bf st-bg st-bh st-bi st-bj st-bk st-bl st-bm st-bn st-bo st-bp st-bq st-br st-bs st-bt st-bu st-bv st-bw st-bx st-by st-bz st-c0"]
 				{
