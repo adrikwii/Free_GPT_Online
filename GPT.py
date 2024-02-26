@@ -41,6 +41,12 @@ streamlit_style = """
 					background-color: rgb(35 37 44);
     				opacity: 75%;
 				}
+
+				/* Div Question utilisateur */
+				[class="stChatMessage st-emotion-cache-janbn0 eeusbqq4"]
+				{
+					background-color: #363333;
+				}
 			</style>
 			"""
 st.markdown(streamlit_style, unsafe_allow_html=True)
