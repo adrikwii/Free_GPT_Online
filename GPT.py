@@ -28,29 +28,29 @@ with col2:
 st.divider()
 tab1,tab2 = st.tabs([":lower_left_ballpoint_pen: Texte :lower_left_ballpoint_pen:",":camera_with_flash: Image :camera_with_flash:"])
 with tab1 :
-    with st.container() :
-        messages = st.container(height=300)
-	if prompt := st.chat_input("Question"):
-            if (st.session_state.historique != []):
-                for ligne in st.session_state.historique:
-                    i = 0
-                    for colonne in ligne:
-                        if i == 0:
-                            messages.chat_message("user",avatar="Icon/utilisateur.png").write(colonne)
-                        else:
-                            messages.chat_message("assistant",avatar="Icon/robot.png").write(colonne)
-                        i += 1
-        messages.chat_message("user",avatar="Icon/utilisateur.png").write(prompt)
-        st.toast('En cours de génération ...')
-	with st.spinner(""):
-		response = g4f.ChatCompletion.create(
-			model=g4f.models.gpt_4,
-			provider=g4f.Provider.You,
-			messages=[{"role": "user", "content": prompt}],
-		)
-        with messages.chat_message("assistant",avatar="Icon/robot.png").write(response)
-        st.session_state.historique.append([prompt,response])
-        st.toast('Terminé :smile:')
+	with st.container() :
+		messages = st.container(height=300)
+		if prompt := st.chat_input("Question"):
+			if (st.session_state.historique != []):
+				for ligne in st.session_state.historique:
+					i = 0
+					for colonne in ligne:
+						if i == 0:
+							messages.chat_message("user",avatar="Icon/utilisateur.png").write(colonne)
+						else:
+							messages.chat_message("assistant",avatar="Icon/robot.png").write(colonne)
+						i += 1
+			messages.chat_message("user",avatar="Icon/utilisateur.png").write(prompt)
+			st.toast('En cours de génération ...')
+			with st.spinner(""):
+				response = g4f.ChatCompletion.create(
+					model=g4f.models.gpt_4,
+					provider=g4f.Provider.You,
+					messages=[{"role": "user", "content": prompt}],
+				)
+			messages.chat_message("assistant",avatar="Icon/robot.png").write(response)
+			st.session_state.historique.append([prompt,response])
+			st.toast('Terminé :smile:')
 with tab2 :
     Image = st.container(height=550)
     if generationPic := st.chat_input("Image"):
