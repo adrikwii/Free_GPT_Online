@@ -44,7 +44,7 @@ streamlit_style = """
 				}
 				[class="st-emotion-cache-sh2krr e1nzilvr5"]
 				{
-					font-size:32px;
+					font-size:50px;
 				}
 				[class="st-ca st-af st-c7"]
 				{
