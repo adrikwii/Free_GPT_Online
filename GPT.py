@@ -1,14 +1,9 @@
 import streamlit as st
-from streamlit_extras.streaming_write import write
 import g4f
 
 if not "historique" in st.session_state:
     st.session_state.historique = []
 
-def Live_write(text):
-    for mot in text.split():
-        yield word + " "
-        time.sleep(0.02)
     
 st.set_page_config(page_title="Free_GPT",page_icon=":robot_face:",layout="wide")
 col1, col2, col3 = st.columns(3)
@@ -41,7 +36,7 @@ with tab1 :
                     provider=g4f.Provider.You,
                     messages=[{"role": "user", "content": prompt}],
                 )
-            messages.chat_message("assistant",avatar="Icon/robot.png").write_stream(Live_write(response))
+            messages.chat_message("assistant",avatar="Icon/robot.png").write(response)
             st.session_state.historique.append([prompt,response])
             st.toast('Terminé :smile:')
 with tab2 :
