@@ -20,6 +20,8 @@ streamlit_style = """
 			"""
 st.markdown(streamlit_style, unsafe_allow_html=True)
 col1, col2, col3 = st.columns(3)
+with col1:
+	st.image("Icon/Logo.png",width="100")
 with col2:
     st.text("""
 ████████████████████████████████████▀█████████████
