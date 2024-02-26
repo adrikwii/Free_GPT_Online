@@ -17,8 +17,8 @@ with tab1 :
     with st.container() :
         messages = st.container(height=300)
         if prompt := st.chat_input("Say something"):
-            if (historique != []):
-                for ligne in historique:
+            if (st.session_state.historique != []):
+                for ligne in st.session_state.historique.historique:
                     i = 0
                     for colonne in ligne:
                         if i == 0:
@@ -36,7 +36,7 @@ with tab1 :
                     ) 
             messages.chat_message("assistant",avatar="Icon/robot.png").write(response)
             st.toast('Terminé :smile:')
-            historique.append([prompt,response])
+            st.session_state.historique.append([prompt,response])
     st.write(historique)
 with tab2 :
     Image = st.container(height=550)
