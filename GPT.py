@@ -111,7 +111,7 @@ with tab2 :
         st.toast('Terminé :smile:')
 col4, col5, col6 = st.columns(3)
 with col4:
-		if st.button("Vider l'historique"):
+		if st.button("Vider l'historique :Trash:"):
 			st.session_state.historique = []
 with col6:
     col7, col8 = st.columns(2)
