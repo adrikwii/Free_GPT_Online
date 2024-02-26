@@ -1,7 +1,7 @@
 import streamlit as st
 import g4f
 
-if not historique:
+if not "historique" in locals():
     historique = []
 st.set_page_config(page_title="Free_GPT",page_icon=":robot_face:",layout="wide")
 col1, col2, col3 = st.columns(3)
