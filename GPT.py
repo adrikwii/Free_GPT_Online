@@ -98,7 +98,7 @@ with tab1 :
 						i += 1
 			messages.chat_message("user",avatar="Icon/utilisateur.png").write(prompt)
 			st.toast('En cours de génération ...')
-			with messages.chat_message("assistant",avatar="Icon/robot.png"):
+			with messages.chat_message("assistant",avatar="Icon/robot.gif"):
 				with st.spinner(""):
 					response = g4f.ChatCompletion.create(
 						model=g4f.models.gpt_4,
