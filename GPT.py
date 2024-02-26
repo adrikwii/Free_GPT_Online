@@ -27,9 +27,8 @@ streamlit_style = """
 			</style>
 			"""
 st.markdown(streamlit_style, unsafe_allow_html=True)
-col1, col2, col3 = st.columns(3)
-with col2:
-    st.text("""
+
+st.text("""
 ████████████████████████████████████▀█████████████
 █▄─▄▄─█▄─▄▄▀█▄─▄▄─█▄─▄▄─█▀▀▀▀▀██─▄▄▄▄█▄─▄▄─█─▄─▄─█
 ██─▄████─▄─▄██─▄█▀██─▄█▀████████─██▄─██─▄▄▄███─███
