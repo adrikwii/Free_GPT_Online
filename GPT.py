@@ -12,8 +12,8 @@ streamlit_style = """
 			@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
 			html, body, [class*="css"]  {
-			font-family: 'Roboto', sans-serif;
-   			overflow: hidden; /* Hide scrollbars */
+   				font-family: 'Roboto', sans-serif;
+   				margin-top: 0;
 			}
 			</style>
 			"""
