@@ -1,4 +1,5 @@
 import streamlit as st
+from streamlit_extras.streaming_write import write
 import g4f
 
 if not "historique" in st.session_state:
