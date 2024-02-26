@@ -18,7 +18,7 @@ tab1,tab2 = st.tabs([":lower_left_ballpoint_pen: Text :lower_left_ballpoint_pen:
 with tab1 :
     with st.container() :
         messages = st.container(height=300)
-        if prompt := st.chat_input("..."):
+        if prompt := st.chat_input("Question ..."):
             if (st.session_state.historique != []):
                 for ligne in st.session_state.historique:
                     i = 0
