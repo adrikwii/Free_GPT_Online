@@ -37,7 +37,7 @@ with tab1 :
             st.session_state.historique.append([prompt,str(response)])
             messages.chat_message("assistant",avatar="Icon/robot.png").write(response)
             st.toast('Terminé :smile:')
-    st.write(response)
+            st.write(response)
     st.write(st.session_state.historique)
 with tab2 :
     Image = st.container(height=550)
