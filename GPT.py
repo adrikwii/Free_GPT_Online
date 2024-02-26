@@ -63,8 +63,8 @@ streamlit_style = """
 				/* Img Bot User */
 				[class="st-emotion-cache-p4micv eeusbqq0"]
 				{
-					width: 3rem;
-    				height: 3rem;
+					width: 2.5rem;
+    				height: 2.5rem;
 				}
 			</style>
 			"""
