@@ -38,13 +38,13 @@ streamlit_style = """
 				}
 
 				/* Onglet */
-				[class="st-b1 st-ao st-d0 st-d1 st-d2 st-d3 st-d4 st-d5 st-d6 st-d7 st-d8 st-d9 st-da"]
+				[class="st-af st-ag st-ah st-ai st-aj st-ak st-al st-am st-an st-ao st-ap st-aq st-ar"]
 				{
 					justify-content: center;
 					background-color: #363333;
     				border-radius: 50px;
 				}
-				[class="st-ec st-b1 st-e9"]
+				[class="st-ca st-af st-c7"]
 				{
 					opacity: 0%;
 				}
@@ -111,7 +111,7 @@ with tab2 :
         st.toast('Terminé :smile:')
 col4, col5, col6 = st.columns(3)
 with col4:
-		if st.button("vider l'historique"):
+		if st.button("Vider l'historique"):
 			st.session_state.historique = []
 with col6:
     col7, col8 = st.columns(2)
