@@ -66,7 +66,7 @@ st.divider()
 tab1,tab2 = st.tabs([":lower_left_ballpoint_pen: Texte :lower_left_ballpoint_pen:",":camera_with_flash: Image :camera_with_flash:"])
 with tab1 :
 	with st.container() :
-		messages = st.container(height=300)
+		messages = st.container(height=425)
 		if prompt := st.chat_input("Question"):
 			if (st.session_state.historique != []):
 				for ligne in st.session_state.historique:
