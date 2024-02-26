@@ -95,7 +95,7 @@ with tab2 :
         Image.chat_message("user",avatar="Icon/utilisateur.png").write(generationPic)
         st.toast('En cours de génération ...')
         response =  "https://image.pollinations.ai/prompt/"+generationPic
-        Image.chat_message("assistant",avatar="Icon/robot.png").image(response,width=400)
+        Image.chat_message("assistant",avatar="Icon/robot.png").image(response,width=300)
         st.toast('Terminé :smile:')
 col4, col5, col6 = st.columns(3)
 with col6:
