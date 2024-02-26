@@ -43,7 +43,7 @@ streamlit_style = """
 				}
 
 				/* Div affichage question-rep */
-				[class="st-emotion-cache-cim3f e1f1d6gn0"]
+				[class="st-emotion-cache-g621un e1f1d6gn0"]
 				{
 					background-color: #363333;
 				}
