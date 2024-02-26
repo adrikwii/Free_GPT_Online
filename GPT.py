@@ -46,6 +46,7 @@ streamlit_style = """
 				[class="stChatMessage st-emotion-cache-janbn0 eeusbqq4"]
 				{
 					background-color: #363333;
+					opacity: 100%;
 				}
 			</style>
 			"""
