@@ -42,13 +42,14 @@ with tab1 :
                         i += 1
             messages.chat_message("user",avatar="Icon/utilisateur.png").write(prompt)
             st.toast('En cours de génération ...')
-            with  st.spinner(""):
-                response = g4f.ChatCompletion.create(
-                    model=g4f.models.gpt_4,
-                    provider=g4f.Provider.You,
-                    messages=[{"role": "user", "content": prompt}],
-                )
-            messages.chat_message("assistant",avatar="Icon/robot.png").write(response)
+            with messages.chat_message("assistant",avatar="Icon/robot.png"):
+		    with  st.spinner(""):
+			    response = g4f.ChatCompletion.create(
+				    model=g4f.models.gpt_4,
+				    provider=g4f.Provider.You,
+				    messages=[{"role": "user", "content": prompt}],
+			    )
+		    st.write(response)
             st.session_state.historique.append([prompt,response])
             st.toast('Terminé :smile:')
 with tab2 :
