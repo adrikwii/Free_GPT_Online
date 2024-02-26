@@ -61,7 +61,7 @@ streamlit_style = """
 					background-color: rgb(35 37 44);
 				}
 				/* Sponsor */
-				[class="styles_terminalButton__JBj5T"]
+				[class="styles_terminalButton__JBj5T"][disabled]
 				{
 					opacity: 0%;
 				}
