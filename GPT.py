@@ -14,6 +14,7 @@ streamlit_style = """
 				[data-testID="stHeader"]
 				{
 					background-color: rgba(0, 0, 0, 0);
+					opacity: 25%;
 				}
 				/* Body */
 				[data-testID="stApp"]
