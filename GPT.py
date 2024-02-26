@@ -13,7 +13,7 @@ streamlit_style = """
 
 			html, body, [class*="css"]  {
 			font-family: 'Roboto', sans-serif;
-   			font-size:20px;
+   			font-size:200px;
 			}
 			</style>
 			"""
