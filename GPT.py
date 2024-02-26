@@ -34,8 +34,9 @@ with tab1 :
                     messages=[{"role": "user", "content": prompt}],
                     stream=True,
                     )
-            rep = messages.chat_message("assistant",avatar="Icon/robot.png").write(response)
-            st.session_state.historique.append([prompt,rep.value])
+            rep = response
+            messages.chat_message("assistant",avatar="Icon/robot.png").write(response)
+            st.session_state.historique.append([prompt,rep])
             st.toast('Terminé :smile:')
     st.write(st.session_state.historique)
 with tab2 :
