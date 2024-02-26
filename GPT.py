@@ -40,9 +40,9 @@ with tab1 :
                         else:
                             messages.chat_message("assistant",avatar="Icon/robot.png").write(colonne)
                         i += 1
-            messages.chat_message("user",avatar="Icon/utilisateur.png").write(prompt)
-            st.toast('En cours de génération ...')
-            with messages.chat_message("assistant",avatar="Icon/robot.png"):
+        messages.chat_message("user",avatar="Icon/utilisateur.png").write(prompt)
+        st.toast('En cours de génération ...')
+        with messages.chat_message("assistant",avatar="Icon/robot.png"):
 		with st.spinner(""):
 			response = g4f.ChatCompletion.create(
 				model=g4f.models.gpt_4,
@@ -50,8 +50,8 @@ with tab1 :
 				messages=[{"role": "user", "content": prompt}],
 			)
 		st.write(response)
-            st.session_state.historique.append([prompt,response])
-            st.toast('Terminé :smile:')
+        st.session_state.historique.append([prompt,response])
+        st.toast('Terminé :smile:')
 with tab2 :
     Image = st.container(height=550)
     if generationPic := st.chat_input("Image"):
