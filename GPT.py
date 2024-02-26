@@ -1,6 +1,18 @@
 import streamlit as st
 import g4f
 
+
+streamlit_style = """
+			<style>
+			@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+			html, body, [class*="css"]  {
+			font-family: 'Roboto', sans-serif;
+			}
+			</style>
+			"""
+st.markdown(streamlit_style, unsafe_allow_html=True)
+
 if not "historique" in st.session_state:
     st.session_state.historique = []
 
@@ -8,11 +20,11 @@ if not "historique" in st.session_state:
 st.set_page_config(page_title="Free_GPT",page_icon=":robot_face:",layout="wide")
 col1, col2, col3 = st.columns(3)
 with col2:
-    st.text(":red[""
+    st.text("""
 ████████████████████████████████████▀█████████████
 █▄─▄▄─█▄─▄▄▀█▄─▄▄─█▄─▄▄─█▀▀▀▀▀██─▄▄▄▄█▄─▄▄─█─▄─▄─█
 ██─▄████─▄─▄██─▄█▀██─▄█▀████████─██▄─██─▄▄▄███─███
-▀▄▄▄▀▀▀▄▄▀▄▄▀▄▄▄▄▄▀▄▄▄▄▄▀▀▀▀▀▀▀▀▄▄▄▄▄▀▄▄▄▀▀▀▀▄▄▄▀▀""]")
+▀▄▄▄▀▀▀▄▄▀▄▄▀▄▄▄▄▄▀▄▄▄▄▄▀▀▀▀▀▀▀▀▄▄▄▄▄▀▄▄▄▀▀▀▀▄▄▄▀▀""")
 st.divider()
 tab1,tab2 = st.tabs([":lower_left_ballpoint_pen: Text :lower_left_ballpoint_pen:",":camera_with_flash: Image :camera_with_flash:"])
 with tab1 :
