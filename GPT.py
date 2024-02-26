@@ -16,6 +16,12 @@ streamlit_style = """
 					background-color: rgba(0, 0, 0, 0);
 					opacity: 25%;
 				}
+				/* Scroll Bar */
+				[class="main st-emotion-cache-uf99v8 ea3mdgi8"]
+				{
+					overflow-y: hidden;
+					overflow-x: hidden;
+				}
 				/* Body */
 				[data-testID="stApp"]
 				{
