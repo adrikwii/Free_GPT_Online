@@ -35,6 +35,7 @@ with tab1 :
             messages.chat_message("assistant",avatar="Icon/robot.png").write(response)
             st.toast('Terminé :smile:')
             historique.append([prompt,response])
+    st.write(historique)
 with tab2 :
     Image = st.container(height=550)
     if generationPic := st.chat_input("Image"):
