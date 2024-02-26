@@ -38,6 +38,7 @@ with tab1 :
             messages.chat_message("assistant",avatar="Icon/robot.png").write(response)
             st.toast('Terminé :smile:')
             rep = response
+    st.write(rep)
     st.write(st.session_state.historique)
 with tab2 :
     Image = st.container(height=550)
