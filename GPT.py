@@ -35,6 +35,7 @@ streamlit_style = """
 				[class="st-emotion-cache-183lzff exotz4b0"]
 				{
 					margin: 0 auto;
+					color: rgb(215 82 77);
 				}
 
 				/* Onglet */
