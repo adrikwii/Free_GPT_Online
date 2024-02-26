@@ -17,7 +17,7 @@ streamlit_style = """
 					background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #363333 23px ), repeating-linear-gradient( #00000055, #000000 );
 				}
 
-				[data-testID="stVerticalBlockBorderWrapper]
+				[data-testID="stVerticalBlockBorderWrapper"]
 				{
 					background-color: #363333;
 				}
