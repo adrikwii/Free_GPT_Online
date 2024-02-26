@@ -38,7 +38,7 @@ streamlit_style = """
 				}
 
 				/* Onglet */
-				[class="st-af st-ag st-ah st-ai st-aj st-ak st-al st-am st-an st-ao st-ap st-aq st-ar"]
+				[class="st-b1 st-ao st-d0 st-d1 st-d2 st-d3 st-d4 st-d5 st-d6 st-d7 st-d8 st-d9 st-da"]
 				{
 					justify-content: center;
 					background-color: #363333;
