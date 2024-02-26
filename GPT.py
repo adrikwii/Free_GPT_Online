@@ -60,6 +60,12 @@ streamlit_style = """
 				{
 					background-color: rgb(35 37 44);
 				}
+				/* Img Bot User */
+				[class"st-emotion-cache-p4micv"]
+				{
+					width: 3rem;
+    				height: 3rem;
+				}
 			</style>
 			"""
 st.markdown(streamlit_style, unsafe_allow_html=True)
