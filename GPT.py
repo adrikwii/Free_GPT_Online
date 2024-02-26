@@ -44,7 +44,7 @@ streamlit_style = """
 					background-color: #363333;
     				border-radius: 50px;
 				}
-				[class="st-ca st-af st-c7"]
+				[class="st-ec st-b1 st-e9"]
 				{
 					opacity: 0%;
 				}
