@@ -1,4 +1,4 @@
-## FREE GPT <img src="Icon/Logo.png" data-canonical-src="Icon/Logo.png" width="100" height="100" />
+## FREE GPT <img src="Icon/Logo.png" data-canonical-src="Icon/Logo.png" width="50" height="50" />
 <img src="https://tse1.mm.bing.net/th/id/OIG3.hfFogBjKKDkmcACkYNc0?pid=ImgGn" data-canonical-src="https://tse1.mm.bing.net/th/id/OIG3.hfFogBjKKDkmcACkYNc0?pid=ImgGn" width="350" height="300" />
 
 
