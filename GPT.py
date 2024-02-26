@@ -7,7 +7,7 @@ if not "historique" in st.session_state:
 	
 
     
-st.set_page_config(page_title="Free_GPT",page_icon=":robot_face:",layout="wide")
+st.set_page_config(page_title="Free_GPT",page_icon="Icon/Logo.png",layout="wide")
 streamlit_style = """
 			<style>
 			@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
