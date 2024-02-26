@@ -39,7 +39,7 @@ streamlit_style = """
 				[class="st-emotion-cache-cim3f e1f1d6gn0"]
 				{
 					background-color: rgb(35 37 44);
-    				opacity: 75%;
+    				opacity: 100%;
 				}
 
 				/* Div Question utilisateur */
