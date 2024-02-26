@@ -23,7 +23,7 @@ with tab1 :
                     messages=[{"role": "user", "content": prompt}],
                     stream=True,
                     ) 
-            messages.chat_message("assistant").write(response)
+            messages.chat_message("assistant",avatar="Icon/utilisateur.png").write(response)
             st.toast('Terminé :smile:')
 with tab2 :
     Image = st.container(height=550)
