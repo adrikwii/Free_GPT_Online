@@ -113,6 +113,10 @@ with tab2 :
 col4, col5, col6 = st.columns(3)
 with col6:
     col7, col8 = st.columns(2)
+	with col7:
+		if st.button("vider l'historique"):
+			st.session_state.historique = []
+
     with col8:
         st.write("Dévelopé par [adrikwii](https://github.com/adrikwii)")
     
