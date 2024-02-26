@@ -33,10 +33,10 @@ with tab1 :
                     provider=g4f.Provider.You,
                     messages=[{"role": "user", "content": prompt}],
                     stream=True,
-                    ) 
+                    )
+            st.session_state.historique.append([prompt,str(response)])
             messages.chat_message("assistant",avatar="Icon/robot.png").write(response)
             st.toast('Terminé :smile:')
-            st.session_state.historique.append([prompt,str(response)])
     st.write(st.session_state.historique)
 with tab2 :
     Image = st.container(height=550)
