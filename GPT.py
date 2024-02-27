@@ -87,6 +87,7 @@ with tab1 :
 	with st.container() :
 		messages = st.container(height=425)
 		if question := st.chat_input("Question"):
+			st.session_state.historique.append({"role": "user", "content": question})
 			if (st.session_state.historique != []):
 				for mess in st.session_state.historique:
 					if mess["role"] == "user":
@@ -100,10 +101,9 @@ with tab1 :
 					response = g4f.ChatCompletion.create(
 						model=g4f.models.gpt_4,
 						provider=g4f.Provider.Liaobots,
-						messages=[{"role": "user", "content": question}],
+						messages=st.session_state.historique,
 					)
 				st.write(response)
-			st.session_state.historique.append({"role": "user", "content": question})
 			st.session_state.historique.append({"role": "assistant", "content": response})
 			st.toast('Terminé :smile:')
 with tab2 :
