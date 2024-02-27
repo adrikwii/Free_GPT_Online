@@ -99,7 +99,6 @@ with tab1 :
 				with st.spinner(""):
 					response = g4f.ChatCompletion.create(
 						model=g4f.models.gpt_4,
-						provider=g4f.Provider.Liaobots,
 						messages=st.session_state.historique,
 					)
 				st.write(response)
