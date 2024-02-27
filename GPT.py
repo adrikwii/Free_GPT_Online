@@ -86,7 +86,7 @@ tab1,tab2 = st.tabs(["  Texte  ","  Image  "])
 with tab1 :
 	with st.container() :
 		messages = st.container(height=425)
-		if prompt := st.chat_input("Question"):
+		if question := st.chat_input("Question"):
 			if (st.session_state.historique != []):
 				for ligne in st.session_state.historique:
 					i = 0
@@ -96,7 +96,7 @@ with tab1 :
 						else:
 							messages.chat_message("assistant",avatar="Icon/robot.png").write(colonne)
 						i += 1
-			messages.chat_message("user",avatar="Icon/utilisateur.png").write(prompt)
+			messages.chat_message("user",avatar="Icon/utilisateur.png").write(question)
 			st.toast('En cours de génération ...')
 			with messages.chat_message("assistant",avatar="Icon/robot.gif"):
 				with st.spinner(""):
@@ -104,10 +104,10 @@ with tab1 :
 						model=g4f.models.gpt_4,
 						provider=g4f.Provider.Liaobots,
 						prompt="Tu une IA qui s'appelle free-gpt",
-						messages=[{"role": "user", "content": prompt}],
+						messages=[{"role": "user", "content": question}],
 					)
 				st.write(response)
-			st.session_state.historique.append([prompt,response])
+			st.session_state.historique.append([question,response])
 			st.toast('Terminé :smile:')
 with tab2 :
     Image = st.container(height=425)
