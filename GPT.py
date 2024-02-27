@@ -98,7 +98,7 @@ with tab1 :
 			with messages.chat_message("assistant",avatar="Icon/robot.gif"):
 				with st.spinner(""):
 					response = g4f.ChatCompletion.create(
-						model="pplx-70b-online",
+						model="codellama-34b-instruct",
 						provider=g4f.Provider.PerplexityLabs,
 						messages=st.session_state.historique,
 					)
