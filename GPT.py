@@ -98,8 +98,8 @@ with tab1 :
 			with messages.chat_message("assistant",avatar="Icon/robot.gif"):
 				with st.spinner(""):
 					response = g4f.ChatCompletion.create(
-						model="gemini",
-						provider=g4f.Provider.Gemini,
+						model="google-gemini-pro",
+						provider=g4f.Provider.FreeChatgpt,
 						messages=st.session_state.historique,
 					)
 				st.write(response)
