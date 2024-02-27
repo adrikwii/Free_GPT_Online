@@ -131,7 +131,7 @@ class Liaobots(AsyncGeneratorProvider, ProviderModelMixin):
                 "model": models[cls.get_model(model)],
                 "messages": messages,
                 "key": "",
-                "prompt": kwargs.get("system_message", "Suppose you are Free-GPT now"),
+                "prompt": kwargs.get("system_message", "Image que tu es Free-GPT maintenant"),
             }
             async with session.post(
                 "https://liaobots.work/api/chat",
