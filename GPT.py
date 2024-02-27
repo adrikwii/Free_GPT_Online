@@ -88,14 +88,11 @@ with tab1 :
 		messages = st.container(height=425)
 		if question := st.chat_input("Question"):
 			if (st.session_state.historique != []):
-				for ligne in st.session_state.historique:
-					i = 0
-					for colonne in ligne:
-						if i == 0:
-							messages.chat_message("user",avatar="Icon/utilisateur.png").write(colonne)
-						else:
-							messages.chat_message("assistant",avatar="Icon/robot.png").write(colonne)
-						i += 1
+				for mess in st.session_state.historique:
+					if mess["role"] == "user":
+						messages.chat_message("user",avatar="Icon/utilisateur.png").write(colonne)
+					elif mess["role"] == "assistant":
+						messages.chat_message("assistant",avatar="Icon/robot.png").write(colonne)
 			messages.chat_message("user",avatar="Icon/utilisateur.png").write(question)
 			st.toast('En cours de génération ...')
 			with messages.chat_message("assistant",avatar="Icon/robot.gif"):
@@ -106,7 +103,8 @@ with tab1 :
 						messages=[{"role": "user", "content": question}],
 					)
 				st.write(response)
-			st.session_state.historique.append([question,response])
+			st.session_state.historique.append({"role": "user", "content": question})
+			st.session_state.historique.append({"role": "assistant", "content": response})
 			st.toast('Terminé :smile:')
 with tab2 :
     Image = st.container(height=425)
