@@ -98,8 +98,8 @@ with tab1 :
 			with messages.chat_message("assistant",avatar="Icon/robot.gif"):
 				with st.spinner(""):
 					response = g4f.ChatCompletion.create(
-						model="mixtral-8x7b-instruct",
-						provider=g4f.Provider.PerplexityLabs,
+						model="openchat/openchat-3.5-1210",
+						provider=g4f.Provider.HuggingChat,
 						messages=st.session_state.historique,
 					)
 				st.write(response)
