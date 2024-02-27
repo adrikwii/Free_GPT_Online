@@ -98,7 +98,7 @@ with tab1 :
 			with messages.chat_message("assistant",avatar="Icon/robot.gif"):
 				with st.spinner(""):
 					response = g4f.ChatCompletion.create(
-						model=model.gpt_4,
+						model=g4f.models.gpt_4,
 						messages=st.session_state.historique,
 					)
 				st.write(response)
