@@ -98,8 +98,7 @@ with tab1 :
 			with messages.chat_message("assistant",avatar="Icon/robot.gif"):
 				with st.spinner(""):
 					response = g4f.ChatCompletion.create(
-						model="openchat_v3.2_mistral",
-						provider=g4f.Provider.Aura,
+						model='gpt-3.5-turbo',
 						messages=st.session_state.historique,
 					)
 				st.write(response)
