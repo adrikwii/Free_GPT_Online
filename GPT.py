@@ -98,7 +98,7 @@ with tab1 :
 			with messages.chat_message("assistant",avatar="Icon/robot.gif"):
 				with st.spinner(""):
 					response = g4f.ChatCompletion.create(
-						model="openchat/openchat-3.5-1210",
+						model="mistralai/Mistral-7B-Instruct-v0.2",
 						provider=g4f.Provider.HuggingChat,
 						messages=st.session_state.historique,
 					)
