@@ -51,7 +51,7 @@ class Llama2(AsyncGeneratorProvider, ProviderModelMixin):
             data = {
                 "prompt": prompt,
                 "model": cls.get_model(model),
-                "systemPrompt": kwargs.get("system_message", "You are a helpful assistant."),
+                "systemPrompt": kwargs.get("system_message", "You are Free-GPT the best assistant of the world."),
                 "temperature": kwargs.get("temperature", 0.75),
                 "topP": kwargs.get("top_p", 0.9),
                 "maxTokens": kwargs.get("max_tokens", 8000),
