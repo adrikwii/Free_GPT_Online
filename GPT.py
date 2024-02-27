@@ -98,7 +98,7 @@ with tab1 :
 			with messages.chat_message("assistant",avatar="Icon/robot.gif"):
 				with st.spinner(""):
 					response = g4f.ChatCompletion.create(
-						model="Llama-2-7b-chat-hf",
+						model="meta/llama-2-70b-chat",
 						provider=g4f.Provider.Llama2,
 						messages=st.session_state.historique,
 					)
