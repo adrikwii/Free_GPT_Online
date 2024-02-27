@@ -2,7 +2,7 @@ import streamlit as st
 import g4f
 
 if not "historique" in st.session_state:
-    st.session_state.historique = [{"role": "user", "content": "Suppose you are Free-GPT now"}]
+    st.session_state.historique = []
 
 st.set_page_config(page_title="Free_GPT",page_icon="Icon/Logo.png",layout="wide")
 streamlit_style = """
@@ -116,7 +116,7 @@ with tab2 :
 col4, col5, col6 = st.columns(3)
 with col4:
 		if st.button("Vider l'historique :wastebasket:"):
-			st.session_state.historique = [{"role": "user", "content": "Suppose you are Free-GPT now"}]
+			st.session_state.historique = []
 with col6:
     col7, col8 = st.columns(2)
     with col8:
