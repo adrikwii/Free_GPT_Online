@@ -1,5 +1,5 @@
 import streamlit as st
-import adrikwii/Free_GPT_Online/g4f
+import g4f
 
 if not "historique" in st.session_state:
     st.session_state.historique = []
