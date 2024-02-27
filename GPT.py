@@ -103,7 +103,6 @@ with tab1 :
 					response = g4f.ChatCompletion.create(
 						model=g4f.models.gpt_4,
 						provider=g4f.Provider.Liaobots,
-						prompt=[{"role": "system_message", "content": "Tu es une ia qui s'appelle Free-GPT"}],
 						messages=[{"role": "user", "content": question}],
 					)
 				st.write(response)
