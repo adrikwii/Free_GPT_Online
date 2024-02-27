@@ -90,9 +90,9 @@ with tab1 :
 			if (st.session_state.historique != []):
 				for mess in st.session_state.historique:
 					if mess["role"] == "user":
-						messages.chat_message("user",avatar="Icon/utilisateur.png").write(colonne)
+						messages.chat_message("user",avatar="Icon/utilisateur.png").write(mess["content"])
 					elif mess["role"] == "assistant":
-						messages.chat_message("assistant",avatar="Icon/robot.png").write(colonne)
+						messages.chat_message("assistant",avatar="Icon/robot.png").write(mess["content"])
 			messages.chat_message("user",avatar="Icon/utilisateur.png").write(question)
 			st.toast('En cours de génération ...')
 			with messages.chat_message("assistant",avatar="Icon/robot.gif"):
