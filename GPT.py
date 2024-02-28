@@ -5,7 +5,8 @@ import time
 import random
 
 model: object = ai.Model()
-global graine = 0
+global graine
+graine = 0
 
 if not "historique" in st.session_state:
     st.session_state.historique = []
