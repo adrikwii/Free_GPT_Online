@@ -111,6 +111,9 @@ with tab1 :
 with tab2 :
 	Image = st.container(height=425)
 	if generationPic := st.chat_input("Image"):
+		option = st.selectbox(
+    'How would you like to be contacted?',
+    ('Email', 'Home phone', 'Mobile phone'))
 		Image.chat_message("user",avatar="Icon/utilisateur.png").write(generationPic)
 		st.toast('En cours de génération ...')
 		Generation: object = model.generate(
