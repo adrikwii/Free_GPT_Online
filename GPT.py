@@ -144,7 +144,6 @@ with tab2 :
 			with st.spinner(""):
 				time.sleep(6)
 			st.image(url,width=300)
-			st.write(Generation.prompt,Generation.url,graine)
 		st.toast('Terminé :smile:')
 col4, col5, col6 = st.columns(3)
 with col4:
