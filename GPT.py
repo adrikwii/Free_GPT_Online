@@ -120,7 +120,7 @@ with tab2 :
 		largeur = st.slider('Select width :',0,1920)
 		hauteur = st.slider('Select height :',0,1080)
 		graine = st.number_input('Enter seed :')
-		if st.button('Random seed'):
+		if st.button('Random seed',value=int):
 			graine = random.randint(1,10000000)
 
 	Image = st.container(height=425)
