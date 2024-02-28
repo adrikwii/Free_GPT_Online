@@ -82,6 +82,9 @@ streamlit_style = """
 					width: 2.5rem;
     				height: 2.5rem;
 				}
+				[data-testid="collapsedControl"] {
+					display: none
+				}
 			</style>
 			"""
 st.markdown(streamlit_style, unsafe_allow_html=True)
@@ -93,17 +96,7 @@ st.text("""
 ▀▄▄▄▀▀▀▄▄▀▄▄▀▄▄▄▄▄▀▄▄▄▄▄▀▀▀▀▀▀▀▀▄▄▄▄▄▀▄▄▄▀▀▀▀▄▄▄▀▀""")
 tab1,tab2 = st.tabs(["  Texte  ","  Image  "])
 with tab1 :
-	st.set_page_config(initial_sidebar_state="collapsed")
-	st.markdown(
-		"""
-		<style>
-		[data-testid="collapsedControl"] {
-			display: none
-		}
-		</style>
-		""",
-		unsafe_allow_html=True,
-		)
+	
 	with st.container() :
 		messages = st.container(height=425)
 		if question := st.chat_input("Question"):
