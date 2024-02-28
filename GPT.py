@@ -4,6 +4,10 @@ import g4f
 import time
 import random
 
+
+def seed_generation():
+	global i 
+	i = (random.randint(1,10000000))
 model: object = ai.Model()
 
 if not "historique" in st.session_state:
@@ -120,10 +124,9 @@ with tab2 :
 	('turbo', 'dreamshaper', 'deliberate', 'pixart', 'playground', 'dpo', 'dalle3xl', 'formulaxl'))
 		largeur = st.slider('Select width :',0,1920)
 		hauteur = st.slider('Select height :',0,1080)
-		if st.button('Random seed'):
-			global graine
-			graine = (random.randint(1,10000000))
-			st.write(f'Seed : {graine}')
+		st.button('Random seed',on_click=seed_generation())
+		graine = i
+		st.write(f'Seed : {graine}')
 
 	Image = st.container(height=425)
 	if generationPic := st.chat_input("Image"):
