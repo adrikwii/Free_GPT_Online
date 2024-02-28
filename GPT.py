@@ -113,7 +113,7 @@ with tab2 :
 		style = st.selectbox(
     "Select picture style :",
     ('impressionism', 'expressionism', 'romanticism','surrealism','watercolor','futuristic','minimalist','modernism','steampunk','realistic','graffiti','abstract','cartoon','vintage','cubism','gothic','anime','logo'))
-	model = st.selectbox(
+		model = st.selectbox(
     "Select ai model :",
 	('turbo', 'dreamshaper', 'deliberate', 'pixart', 'playground', 'dpo', 'dalle3xl', 'formulaxl'))
 
