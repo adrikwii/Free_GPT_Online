@@ -119,7 +119,7 @@ with tab2 :
 			height=512,
 			seed=57184
 			)
-		url = str(Generation.url)
+		url = str(Generation.ImageURL)
 		Image.chat_message("assistant",avatar="Icon/robot.gif").write(url)
 		st.toast('Terminé :smile:')
 col4, col5, col6 = st.columns(3)
