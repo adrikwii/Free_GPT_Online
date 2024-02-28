@@ -2,6 +2,7 @@ import streamlit as st
 import pollinations as ai
 import g4f
 import time
+import random
 
 model: object = ai.Model()
 
@@ -116,8 +117,11 @@ with tab2 :
 		ai_model = st.selectbox(
     "Select ai model :",
 	('turbo', 'dreamshaper', 'deliberate', 'pixart', 'playground', 'dpo', 'dalle3xl', 'formulaxl'))
-		largeur = st.slider('Select width',0,1920)
-		hauteur = st.slider('Select height',0,1080)
+		largeur = st.slider('Select width :',0,1920)
+		hauteur = st.slider('Select height :',0,1080)
+		graine = st.number_input('Enter seed :')
+		if st.button('Random seed'):
+			graine = random.randint(1,10000000)
 
 	Image = st.container(height=425)
 	if generationPic := st.chat_input("Image"):
@@ -130,7 +134,7 @@ with tab2 :
 			height=hauteur,
 			seed=711144046
 			)
-		url = f'https://pollinations.ai/p/{Generation.prompt}?model={ai_model}&width={largeur}&height={hauteur}&seed=10897863'
+		url = f'https://pollinations.ai/p/{Generation.prompt}?model={ai_model}&width={largeur}&height={hauteur}&seed={graine}'
 		with Image.chat_message("assistant",avatar="Icon/robot.gif"):
 			with st.spinner(""):
 				time.sleep(6)
