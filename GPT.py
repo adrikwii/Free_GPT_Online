@@ -85,7 +85,7 @@ streamlit_style = """
 
 				[class="st-emotion-cache-1wmy9hl e1f1d6gn1"]
 				{
-					background-color: #363333;
+
 				}
 			</style>
 			"""
