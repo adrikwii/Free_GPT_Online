@@ -122,7 +122,8 @@ with tab1 :
 with tab2 :
 	col_sidebar, ai_col = st.columns([1, 3])
 	with col_sidebar:
-		with st.container():
+		sidebar_image = st.container(border=True)
+		with sidebar_image:
 			style = st.selectbox(
     	"Select picture style :",
     	('impressionism', 'expressionism', 'romanticism','surrealism','watercolor','futuristic','minimalist','modernism','steampunk','realistic','graffiti','abstract','cartoon','vintage','cubism','gothic','anime','logo'))
