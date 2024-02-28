@@ -1,3 +1,4 @@
+pollinations.ai
 requests
 pycryptodome
 curl_cffi>=0.6.0b9
@@ -21,6 +22,5 @@ brotli
 beautifulsoup4
 setuptools
 aiohttp_socks
-pollinations.ai
 time
 random
