@@ -109,9 +109,9 @@ with tab1 :
 			st.session_state.historique.append({"role": "assistant", "content": response})
 			st.toast('Terminé :smile:')
 with tab2 :
-    Image = st.container(height=425)
-    if generationPic := st.chat_input("Image"):
-        Image.chat_message("user",avatar="Icon/utilisateur.png").write(generationPic)
+	Image = st.container(height=425)
+	if generationPic := st.chat_input("Image"):
+		Image.chat_message("user",avatar="Icon/utilisateur.png").write(generationPic)
         st.toast('En cours de génération ...')
 		Generation: object = model.generate(
 			prompt=f'{generationPic} {ai.realistic}',
@@ -119,8 +119,8 @@ with tab2 :
 			height=512,
 			seed=57184
 			)
-        Image.chat_message("assistant",avatar="Icon/robot.gif").image(Generation.url,width=300)
-        st.toast('Terminé :smile:')
+			Image.chat_message("assistant",avatar="Icon/robot.gif").image(Generation.url,width=300)
+			st.toast('Terminé :smile:')
 col4, col5, col6 = st.columns(3)
 with col4:
 		if st.button("Vider l'historique :wastebasket:"):
