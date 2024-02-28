@@ -83,9 +83,9 @@ streamlit_style = """
     				height: 2.5rem;
 				}
 
-				[class="st-emotion-cache-1wmy9hl e1f1d6gn1"]
+				[data-testID="stVerticalBlockBorderWrapper"]
 				{
-
+					background-color: #363333;
 				}
 			</style>
 			"""
