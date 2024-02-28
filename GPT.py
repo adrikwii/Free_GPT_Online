@@ -113,7 +113,7 @@ with tab2 :
 		style = st.selectbox(
     "Select picture style :",
     ('impressionism', 'expressionism', 'romanticism','surrealism','watercolor','futuristic','minimalist','modernism','steampunk','realistic','graffiti','abstract','cartoon','vintage','cubism','gothic','anime','logo'))
-		model = st.selectbox(
+		ai_model = st.selectbox(
     "Select ai model :",
 	('turbo', 'dreamshaper', 'deliberate', 'pixart', 'playground', 'dpo', 'dalle3xl', 'formulaxl'))
 
@@ -123,7 +123,7 @@ with tab2 :
 		st.toast('En cours de génération ...')
 		Generation: object = model.generate(
 			prompt=f'{generationPic} {ai.styles.get(style)}',
-			model=model,
+			model=ai_model,
 			height=512,
 			seed=711144046
 			)
