@@ -114,7 +114,7 @@ with tab2 :
 		Image.chat_message("user",avatar="Icon/utilisateur.png").write(generationPic)
 		st.toast('En cours de génération ...')
 		Generation: object = model.generate(
-			prompt=f'{generationPic} {ai.realistic}',
+			prompt=f'{generationPic} {ai.cartoon}',
 			model='pixart',
 			height=512,
 			seed=711144046
