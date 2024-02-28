@@ -111,7 +111,7 @@ with tab1 :
 with tab2 :
 	with st.sidebar:
 		style = st.selectbox(
-    "Séléctionnais le style de l'image :",
+    "Select picture style :",
     ('impressionism', 'expressionism', 'romanticism','surrealism','watercolor','futuristic','minimalist','modernism','steampunk','realistic','graffiti','abstract','cartoon','vintage','cubism','gothic','anime','logo'))
 	Image = st.container(height=425)
 	if generationPic := st.chat_input("Image"):
