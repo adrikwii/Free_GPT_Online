@@ -117,7 +117,7 @@ with tab2 :
 			prompt=f'{generationPic}',
 			model='pixart',
 			height=512,
-			seed=57184
+			seed='random'
 			)
 		url = f'https://pollinations.ai/p/{Generation.prompt}'
 		with Image.chat_message("assistant",avatar="Icon/robot.gif"):
