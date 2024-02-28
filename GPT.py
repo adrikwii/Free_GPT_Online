@@ -133,14 +133,14 @@ with tab2 :
 			model=ai_model,
 			width=largeur,
 			height=hauteur,
-			seed=711144046
+			seed=graine
 			)
 		url = f'https://pollinations.ai/p/{Generation.prompt}?model={ai_model}&width={largeur}&height={hauteur}&seed={graine}'
 		with Image.chat_message("assistant",avatar="Icon/robot.gif"):
 			with st.spinner(""):
 				time.sleep(6)
 			st.image(url,width=300)
-			st.write(Generation.prompt,Generation.url)
+			st.write(Generation.prompt,Generation.url,graine)
 		st.toast('Terminé :smile:')
 col4, col5, col6 = st.columns(3)
 with col4:
