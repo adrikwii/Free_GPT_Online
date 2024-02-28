@@ -1,5 +1,9 @@
 import streamlit as st
+import pollinations as ai
 import g4f
+
+
+model: object = ai.Model()
 
 if not "historique" in st.session_state:
     st.session_state.historique = []
@@ -109,8 +113,13 @@ with tab2 :
     if generationPic := st.chat_input("Image"):
         Image.chat_message("user",avatar="Icon/utilisateur.png").write(generationPic)
         st.toast('En cours de génération ...')
-        response =  "https://image.pollinations.ai/prompt/"+generationPic
-        Image.chat_message("assistant",avatar="Icon/robot.gif").image(response,width=300)
+		Generation: object = model.generate(
+			prompt=f'{generationPic} {ai.realistic}',
+			model=ai.turbo,
+			height=512,
+			seed=57184
+			)
+        Image.chat_message("assistant",avatar="Icon/robot.gif").image(Generation.url,width=300)
         st.toast('Terminé :smile:')
 col4, col5, col6 = st.columns(3)
 with col4:
