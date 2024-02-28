@@ -120,19 +120,20 @@ with tab1 :
 			st.session_state.historique.append({"role": "assistant", "content": response})
 			st.toast('Terminé :smile:')
 with tab2 :
-	sidebar_image, ai_col = st.columns([1, 3])
-	with sidebar_image:
-		style = st.selectbox(
-    "Select picture style :",
-    ('impressionism', 'expressionism', 'romanticism','surrealism','watercolor','futuristic','minimalist','modernism','steampunk','realistic','graffiti','abstract','cartoon','vintage','cubism','gothic','anime','logo'))
-		ai_model = st.selectbox(
-    "Select ai model :",
-	('turbo', 'dreamshaper', 'deliberate', 'pixart', 'playground', 'dpo', 'dalle3xl', 'formulaxl'))
-		largeur = st.slider('Select width :',0,1920)
-		hauteur = st.slider('Select height :',0,1080)
-		st.button('Random seed',on_click=seed_generation())
-		graine = i
-		st.write(f'Seed : {graine}')
+	col_sidebar, ai_col = st.columns([1, 3])
+	with col_sidebar:
+		with st.container:
+			style = st.selectbox(
+    	"Select picture style :",
+    	('impressionism', 'expressionism', 'romanticism','surrealism','watercolor','futuristic','minimalist','modernism','steampunk','realistic','graffiti','abstract','cartoon','vintage','cubism','gothic','anime','logo'))
+			ai_model = st.selectbox(
+    	"Select ai model :",
+		('turbo', 'dreamshaper', 'deliberate', 'pixart', 'playground', 'dpo', 'dalle3xl', 'formulaxl'))
+			largeur = st.slider('Select width :',0,1920)
+			hauteur = st.slider('Select height :',0,1080)
+			st.button('Random seed',on_click=seed_generation())
+			graine = i
+			st.write(f'Seed : {graine}')
 	with ai_col:
 		Image = st.container(height=425)
 		if generationPic := st.chat_input("Image"):
