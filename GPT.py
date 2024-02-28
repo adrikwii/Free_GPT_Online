@@ -119,9 +119,10 @@ with tab2 :
 	('turbo', 'dreamshaper', 'deliberate', 'pixart', 'playground', 'dpo', 'dalle3xl', 'formulaxl'))
 		largeur = st.slider('Select width :',0,1920)
 		hauteur = st.slider('Select height :',0,1080)
-		graine = st.number_input('Enter seed :',format="%i",step=1)
+		
 		if st.button('Random seed'):
-			graine(value=(random.randint(1,10000000)))
+			graine = (random.randint(1,10000000))
+			st.write(f'Seed : {graine}')
 
 	Image = st.container(height=425)
 	if generationPic := st.chat_input("Image"):
