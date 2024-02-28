@@ -5,8 +5,6 @@ import time
 import random
 
 model: object = ai.Model()
-global graine
-graine = 0
 
 if not "historique" in st.session_state:
     st.session_state.historique = []
@@ -123,6 +121,7 @@ with tab2 :
 		largeur = st.slider('Select width :',0,1920)
 		hauteur = st.slider('Select height :',0,1080)
 		if st.button('Random seed'):
+			global graine
 			graine = (random.randint(1,10000000))
 			st.write(f'Seed : {graine}')
 
