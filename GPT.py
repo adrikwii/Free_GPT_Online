@@ -111,6 +111,7 @@ with tab1 :
 			st.session_state.historique.append({"role": "assistant", "content": response})
 			st.toast('Terminé :smile:')
 with tab2 :
+	
 	with st.sidebar:
 		style = st.selectbox(
     "Select picture style :",
