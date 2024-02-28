@@ -120,7 +120,7 @@ with tab2 :
 			seed=57184
 			)
 		url = f'https://pollinations.ai/p/{Generation.prompt}'
-		Image.chat_message("assistant",avatar="Icon/robot.gif").Image(url,width=300)
+		Image.chat_message("assistant",avatar="Icon/robot.gif").image(url,width=300)
 		st.toast('Terminé :smile:')
 col4, col5, col6 = st.columns(3)
 with col4:
