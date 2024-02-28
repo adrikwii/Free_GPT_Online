@@ -132,7 +132,7 @@ with tab2 :
 		('turbo', 'dreamshaper', 'deliberate', 'pixart', 'playground', 'dpo', 'dalle3xl', 'formulaxl'))
 			largeur = st.slider('Select width :',0,1920)
 			hauteur = st.slider('Select height :',0,1080)
-			col_btn, col_seed = st.columns(1,2)
+			col_btn, col_seed = st.columns(2)
 			with col_btn:
 				st.button('Random seed',on_click=seed_generation())
 			graine = i
