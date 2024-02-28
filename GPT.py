@@ -111,8 +111,8 @@ with tab1 :
 with tab2 :
 	with st.sidebar:
 		option = st.selectbox(
-    'How would you like to be contacted?',
-    ('Email', 'Home phone', 'Mobile phone'))
+    "Séléctionnais le style de l'image :",
+    ('impressionism', 'expressionism', 'romanticism','surrealism','watercolor','futuristic','minimalist','modernism','steampunk','realistic','graffiti','abstract','cartoon','vintage','cubism','gothic','anime','logo'))
 	Image = st.container(height=425)
 	if generationPic := st.chat_input("Image"):
 		Image.chat_message("user",avatar="Icon/utilisateur.png").write(generationPic)
