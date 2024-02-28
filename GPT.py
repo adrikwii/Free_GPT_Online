@@ -115,7 +115,7 @@ with tab1 :
 			st.session_state.historique.append({"role": "assistant", "content": response})
 			st.toast('Terminé :smile:')
 with tab2 :
-	sidebar_image = st.sidebar
+	 sidebar_image, ai_col = st.columns([1, 3])
 	with sidebar_image:
 		style = st.selectbox(
     "Select picture style :",
@@ -128,30 +128,30 @@ with tab2 :
 		st.button('Random seed',on_click=seed_generation())
 		graine = i
 		st.write(f'Seed : {graine}')
-
-	Image = st.container(height=425)
-	if generationPic := st.chat_input("Image"):
-		Image.chat_message("user",avatar="Icon/utilisateur.png").write(generationPic)
-		st.toast('En cours de génération ...')
-		Generation: object = model.generate(
-			prompt=f'{generationPic} {ai.styles.get(style)}',
-			model=ai_model,
-			width=largeur,
-			height=hauteur,
-			seed=graine
-			)
-		url = f'https://pollinations.ai/p/{Generation.prompt}?model={ai_model}&width={largeur}&height={hauteur}&seed={graine}'
-		with Image.chat_message("assistant",avatar="Icon/robot.gif"):
-			with st.spinner(""):
-				time.sleep(6)
-			st.image(url,width=300)
-		st.toast('Terminé :smile:')
-col4, col5, col6 = st.columns(3)
-with col4:
-		if st.button("Vider l'historique :wastebasket:"):
-			st.session_state.historique = []
-with col6:
-    col7, col8 = st.columns(2)
-    with col8:
-        st.write("Dévelopé par [adrikwii](https://github.com/adrikwii)")
+	with ai_col:
+		Image = st.container(height=425)
+		if generationPic := st.chat_input("Image"):
+			Image.chat_message("user",avatar="Icon/utilisateur.png").write(generationPic)
+			st.toast('En cours de génération ...')
+			Generation: object = model.generate(
+				prompt=f'{generationPic} {ai.styles.get(style)}',
+				model=ai_model,
+				width=largeur,
+				height=hauteur,
+				seed=graine
+				)
+			url = f'https://pollinations.ai/p/{Generation.prompt}?model={ai_model}&width={largeur}&height={hauteur}&seed={graine}'
+			with Image.chat_message("assistant",avatar="Icon/robot.gif"):
+				with st.spinner(""):
+					time.sleep(6)
+				st.image(url,width=300)
+			st.toast('Terminé :smile:')
+	col4, col5, col6 = st.columns(3)
+	with col4:
+			if st.button("Vider l'historique :wastebasket:"):
+				st.session_state.historique = []
+	with col6:
+    	col7, col8 = st.columns(2)
+    	with col8:
+        	st.write("Dévelopé par [adrikwii](https://github.com/adrikwii)")
     
