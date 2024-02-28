@@ -109,11 +109,12 @@ with tab1 :
 			st.session_state.historique.append({"role": "assistant", "content": response})
 			st.toast('Terminé :smile:')
 with tab2 :
-	Image = st.container(height=425)
-	if generationPic := st.chat_input("Image"):
+	with st.sidebar:
 		option = st.selectbox(
     'How would you like to be contacted?',
     ('Email', 'Home phone', 'Mobile phone'))
+	Image = st.container(height=425)
+	if generationPic := st.chat_input("Image"):
 		Image.chat_message("user",avatar="Icon/utilisateur.png").write(generationPic)
 		st.toast('En cours de génération ...')
 		Generation: object = model.generate(
