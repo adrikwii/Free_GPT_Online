@@ -114,8 +114,8 @@ with tab1 :
 			st.session_state.historique.append({"role": "assistant", "content": response})
 			st.toast('Terminé :smile:')
 with tab2 :
-	
-	with sidebar_image = st.sidebar:
+	sidebar_image = st.sidebar
+	with sidebar_image:
 		style = st.selectbox(
     "Select picture style :",
     ('impressionism', 'expressionism', 'romanticism','surrealism','watercolor','futuristic','minimalist','modernism','steampunk','realistic','graffiti','abstract','cartoon','vintage','cubism','gothic','anime','logo'))
