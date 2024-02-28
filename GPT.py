@@ -146,12 +146,12 @@ with tab2 :
 					time.sleep(6)
 				st.image(url,width=300)
 			st.toast('Terminé :smile:')
-	col4, col5, col6 = st.columns(3)
-	with col4:
-			if st.button("Vider l'historique :wastebasket:"):
-				st.session_state.historique = []
-	with col6:
-    	col7, col8 = st.columns(2)
-    	with col8:
-        	st.write("Dévelopé par [adrikwii](https://github.com/adrikwii)")
+col4, col5, col6 = st.columns(3)
+with col4:
+		if st.button("Vider l'historique :wastebasket:"):
+			st.session_state.historique = []
+with col6:
+    col7, col8 = st.columns(2)
+    with col8:
+        st.write("Dévelopé par [adrikwii](https://github.com/adrikwii)")
     
