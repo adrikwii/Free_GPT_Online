@@ -25,8 +25,8 @@ streamlit_style = """
 				/* Scroll Bar */
 				[class="main st-emotion-cache-uf99v8 ea3mdgi8"]
 				{
-					overflow-y: hidden;
-					overflow-x: hidden;
+					/*overflow-y: hidden;
+					overflow-x: hidden;*/
 				}
 				/* Body */
 				[data-testID="stApp"]
