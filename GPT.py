@@ -116,6 +116,8 @@ with tab2 :
 		ai_model = st.selectbox(
     "Select ai model :",
 	('turbo', 'dreamshaper', 'deliberate', 'pixart', 'playground', 'dpo', 'dalle3xl', 'formulaxl'))
+		largeur = st.slider('Select width',0,1024)
+		hauteur = st.slider('Select height',0,1024)
 
 	Image = st.container(height=425)
 	if generationPic := st.chat_input("Image"):
@@ -124,7 +126,8 @@ with tab2 :
 		Generation: object = model.generate(
 			prompt=f'{generationPic} {ai.styles.get(style)}',
 			model=ai_model,
-			height=512,
+			width=largeur,
+			height=hauteur,
 			seed=711144046
 			)
 		url = f'https://pollinations.ai/p/{Generation.prompt}'
