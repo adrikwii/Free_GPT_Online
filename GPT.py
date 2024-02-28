@@ -112,7 +112,7 @@ with tab2 :
 	Image = st.container(height=425)
 	if generationPic := st.chat_input("Image"):
 		Image.chat_message("user",avatar="Icon/utilisateur.png").write(generationPic)
-        st.toast('En cours de génération ...')
+		st.toast('En cours de génération ...')
 		Generation: object = model.generate(
 			prompt=f'{generationPic} {ai.realistic}',
 			model=ai.turbo,
