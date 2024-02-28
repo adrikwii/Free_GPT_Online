@@ -83,7 +83,7 @@ streamlit_style = """
     				height: 2.5rem;
 				}
 
-				[class="st-emotion-cache-1wmy9hl e1f1d6gn1"]
+				[class="st-n1"]
 				{
 					background-color: #363333;
 				}
