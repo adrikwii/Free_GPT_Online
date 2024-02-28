@@ -115,7 +115,7 @@ with tab1 :
 			st.toast('Terminé :smile:')
 with tab2 :
 	
-	with st.sidebar:
+	with sidebar_image = st.sidebar:
 		style = st.selectbox(
     "Select picture style :",
     ('impressionism', 'expressionism', 'romanticism','surrealism','watercolor','futuristic','minimalist','modernism','steampunk','realistic','graffiti','abstract','cartoon','vintage','cubism','gothic','anime','logo'))
