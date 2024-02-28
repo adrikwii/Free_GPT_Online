@@ -130,7 +130,7 @@ with tab2 :
 			height=hauteur,
 			seed=711144046
 			)
-		url = f'https://pollinations.ai/p/{Generation.prompt}'
+		url = f'https://pollinations.ai/p/{Generation.prompt}?model={ai_model}&width={largeur}&height={hauteur}&seed=10897863'
 		with Image.chat_message("assistant",avatar="Icon/robot.gif"):
 			with st.spinner(""):
 				time.sleep(6)
