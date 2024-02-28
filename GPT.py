@@ -82,9 +82,6 @@ streamlit_style = """
 					width: 2.5rem;
     				height: 2.5rem;
 				}
-				[data-testid="collapsedControl"] {
-					display: none
-				}
 			</style>
 			"""
 st.markdown(streamlit_style, unsafe_allow_html=True)
