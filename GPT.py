@@ -1,7 +1,7 @@
 import streamlit as st
 import pollinations as ai
 import g4f
-
+import time
 
 model: object = ai.Model()
 
@@ -120,7 +120,10 @@ with tab2 :
 			seed=57184
 			)
 		url = f'https://pollinations.ai/p/{Generation.prompt}'
-		Image.chat_message("assistant",avatar="Icon/robot.gif").image(url,width=300)
+		with Image.chat_message("assistant",avatar="Icon/robot.gif"):
+			with st.spinner(""):
+				time.sleep(1)
+			st.image(url,width=300)
 		st.toast('Terminé :smile:')
 col4, col5, col6 = st.columns(3)
 with col4:
