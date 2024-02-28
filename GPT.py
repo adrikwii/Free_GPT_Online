@@ -110,16 +110,15 @@ with tab1 :
 			st.toast('Terminé :smile:')
 with tab2 :
 	with st.sidebar:
-		option = st.selectbox(
+		style = st.selectbox(
     "Séléctionnais le style de l'image :",
     ('impressionism', 'expressionism', 'romanticism','surrealism','watercolor','futuristic','minimalist','modernism','steampunk','realistic','graffiti','abstract','cartoon','vintage','cubism','gothic','anime','logo'))
 	Image = st.container(height=425)
-	style = f'ai.{option}'
 	if generationPic := st.chat_input("Image"):
 		Image.chat_message("user",avatar="Icon/utilisateur.png").write(generationPic)
 		st.toast('En cours de génération ...')
 		Generation: object = model.generate(
-			prompt=f'{generationPic} {style}',
+			prompt=f'{generationPic} {ai.styles.get(style)}',
 			model='pixart',
 			height=512,
 			seed=711144046
