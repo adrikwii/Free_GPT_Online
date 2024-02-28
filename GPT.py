@@ -82,6 +82,11 @@ streamlit_style = """
 					width: 2.5rem;
     				height: 2.5rem;
 				}
+
+				[class="st-emotion-cache-0 e1f1d6gn0"]
+				{
+					background-color: #363333;
+				}
 			</style>
 			"""
 st.markdown(streamlit_style, unsafe_allow_html=True)
