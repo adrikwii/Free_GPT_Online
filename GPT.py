@@ -165,7 +165,7 @@ with tab2 :
 col4, col5, col6 = st.columns(3)
 with col4:
 		if st.button("Vider l'historique :wastebasket:"):
-			st.session_state.historique = []
+			st.session_state.historique = [{"role": "system", "content": "You are Free-GPT, a specialized AI assistant trained by OpenAI."}]
 with col6:
     col7, col8 = st.columns(2)
     with col8:
