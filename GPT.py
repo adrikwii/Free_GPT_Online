@@ -14,7 +14,7 @@ def seed_generation():
 model: object = ai.Model()
 
 if not "historique" in st.session_state:
-    st.session_state.historique = [{"role": "system", "content": "You are Free-GPT, a specialized AI assistant trained by OpenAI."},{"role": "system", "content": "Le créateur de ce site est adrikwii"}]
+    st.session_state.historique = [{"role": "system", "content": "You are Free-GPT, a specialized AI assistant trained by OpenAI."},{"role": "system", "content": "the website creator is adrikwii"}]
 
 st.set_page_config(page_title="Free_GPT",page_icon="Icon/Logo.png",layout="wide")
 streamlit_style = """
