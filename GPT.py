@@ -155,7 +155,6 @@ with tab2 :
 			st.toast('En cours de génération ...')
 			with Image.chat_message("assistant",avatar="Icon/robot.gif"):
 				with st.spinner(""):
-					time.sleep(6)
 					try :
 						Generation: object = model.generate(
 							prompt=f'{generationPic} {ai.styles.get(style)}',
@@ -168,6 +167,7 @@ with tab2 :
 					except :
 						st.error("Veuillez réessayer", icon="🚨")
 					else :
+						time.sleep(6)
 						st.image(url,width=300)
 			st.toast('Terminé :smile:')
 col4, col5, col6 = st.columns(3)
