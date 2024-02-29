@@ -123,9 +123,9 @@ with tab1 :
 						json_response = requests.post(url, json=body).json().get('choices', [])
 						for choice in json_response:
 							response = (choice.get('message', {}).get('content', ''))
-						except:
-							response = "ERREUR"
-							st.error("Une erreur c'est produite", icon="🚨")
+					except:
+						response = "ERREUR"
+						st.error("Une erreur c'est produite", icon="🚨")
 				st.write(response)
 			st.session_state.historique.append({"role": "assistant", "content": response})
 			st.toast('Terminé :smile:')
