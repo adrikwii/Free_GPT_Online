@@ -114,7 +114,7 @@ with tab1 :
 				with st.spinner(""):
 					response = g4f.ChatCompletion.create(
 						model="gpt-3.5-turbo",
-						provider=g4f.provider.GptTalkRu,
+						provider=g4f.Provider.GptTalkRu,
 						messages=st.session_state.historique,
 					)
 				st.write(response)
