@@ -153,22 +153,22 @@ with tab2 :
 		if generationPic := st.chat_input("Image"):
 			Image.chat_message("user",avatar="Icon/utilisateur.png").write(generationPic)
 			st.toast('En cours de génération ...')
-			try :
-				Generation: object = model.generate(
-					prompt=f'{generationPic} {ai.styles.get(style)}',
-					model=ai_model,
-					width=largeur,
-					height=hauteur,
-					seed=graine
-					)
-				url = f'https://pollinations.ai/p/{Generation.prompt}?model={ai_model}&width={largeur}&height={hauteur}&seed={graine}'
-				with Image.chat_message("assistant",avatar="Icon/robot.gif"):
-					with st.spinner(""):
-						time.sleep(6)
-			except :
-					st.error("Veuillez réessayer", icon="🚨")
-			else :
-					st.image(url,width=300)
+			with Image.chat_message("assistant",avatar="Icon/robot.gif"):
+				with st.spinner(""):
+					time.sleep(6)
+					try :
+						Generation: object = model.generate(
+							prompt=f'{generationPic} {ai.styles.get(style)}',
+							model=ai_model,
+							width=largeur,
+							height=hauteur,
+							seed=graine
+						)
+						url = f'https://pollinations.ai/p/{Generation.prompt}?model={ai_model}&width={largeur}&height={hauteur}&seed={graine}'
+					except :
+						st.error("Veuillez réessayer", icon="🚨")
+					else :
+						st.image(url,width=300)
 			st.toast('Terminé :smile:')
 col4, col5, col6 = st.columns(3)
 with col4:
