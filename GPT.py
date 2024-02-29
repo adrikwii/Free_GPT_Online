@@ -121,7 +121,8 @@ with tab1 :
     					"messages": st.session_state.historique,
 						}
 				json_response = requests.post(url, json=body).json().get('choices', [])
-				response = (for choice in json_response: print(choice.get('message', {}).get('content', '')))
+				for choice in json_response:
+					response = (choice.get('message', {}).get('content', ''))
 				st.write(response)
 			st.session_state.historique.append({"role": "assistant", "content": response})
 			st.toast('Terminé :smile:')
