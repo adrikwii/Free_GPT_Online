@@ -125,7 +125,8 @@ with tab1 :
 							response = (choice.get('message', {}).get('content', ''))
 					except:
 						st.error("Une erreur c'est produite", icon="🚨")
-				st.write(response)
+					else:
+						st.write(response)
 			st.session_state.historique.append({"role": "assistant", "content": response})
 			st.toast('Terminé :smile:')
 with tab2 :
