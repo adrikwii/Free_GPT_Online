@@ -1,6 +1,5 @@
 import streamlit as st
 import pollinations as ai
-import g4f
 import time
 import random
 import requests
