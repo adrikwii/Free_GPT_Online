@@ -140,8 +140,8 @@ with tab2 :
 			ai_model = st.selectbox(
     	"Select ai model :",
 		('turbo', 'dreamshaper', 'deliberate', 'pixart', 'playground', 'dpo', 'dalle3xl', 'formulaxl'))
-			largeur = st.slider('Select width :',0,1920)
-			hauteur = st.slider('Select height :',0,1080)
+			largeur = st.slider('Select width :',0,1920,value=960)
+			hauteur = st.slider('Select height :',0,1080,value=540)
 			col_btn, col_seed = st.columns(2)
 			with col_btn:
 				st.button('Random seed',on_click=seed_generation())
