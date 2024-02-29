@@ -5,7 +5,7 @@ import random
 import requests
 
 
-url = "https://18c1-2a01-e0a-3f2-93e0-5c6d-95ff-fe9f-263.ngrok-free.app/v1/chat/completions"
+url = "https://b33a-2a01-e0a-3f2-93e0-5c6d-95ff-fe9f-263.ngrok-free.app/v1/chat/completions"
 
 
 def seed_generation():
