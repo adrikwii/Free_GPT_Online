@@ -124,7 +124,6 @@ with tab1 :
 						for choice in json_response:
 							response = (choice.get('message', {}).get('content', ''))
 					except:
-						response = "ERREUR"
 						st.error("Une erreur c'est produite", icon="🚨")
 				st.write(response)
 			st.session_state.historique.append({"role": "assistant", "content": response})
