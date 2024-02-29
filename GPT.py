@@ -5,7 +5,7 @@ import random
 import requests
 
 
-url = "https://b33a-2a01-e0a-3f2-93e0-5c6d-95ff-fe9f-263.ngrok-free.app/v1/chat/completions"
+url = "ttps://b33a-2a01-e0a-3f2-93e0-5c6d-95ff-fe9f-263.ngrok-free.app/v1/chat/completions"
 
 
 def seed_generation():
@@ -114,14 +114,18 @@ with tab1 :
 			st.toast('En cours de génération ...')
 			with messages.chat_message("assistant",avatar="Icon/robot.gif"):
 				with st.spinner(""):
-					body = {
-						"model": "gpt-3.5-turbo-16k",
-    					"stream": False,
-    					"messages": st.session_state.historique,
-						}
-					json_response = requests.post(url, json=body).json().get('choices', [])
-					for choice in json_response:
-						response = (choice.get('message', {}).get('content', ''))
+					try :
+						body = {
+							"model": "gpt-3.5-turbo-16k",
+    						"stream": False,
+    						"messages": st.session_state.historique,
+							}
+						json_response = requests.post(url, json=body).json().get('choices', [])
+						for choice in json_response:
+							response = (choice.get('message', {}).get('content', ''))
+						except:
+							response = "ERREUR"
+							st.error("Une erreur c'est produite", icon="🚨")
 				st.write(response)
 			st.session_state.historique.append({"role": "assistant", "content": response})
 			st.toast('Terminé :smile:')
