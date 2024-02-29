@@ -3,6 +3,10 @@ import pollinations as ai
 import g4f
 import time
 import random
+import requests
+
+
+url = "https://b6ba-2a01-e0a-3f2-93e0-5c6d-95ff-fe9f-263.ngrok-free.app/v1/chat/completions"
 
 
 def seed_generation():
@@ -98,7 +102,6 @@ st.text("""
 ▀▄▄▄▀▀▀▄▄▀▄▄▀▄▄▄▄▄▀▄▄▄▄▄▀▀▀▀▀▀▀▀▄▄▄▄▄▀▄▄▄▀▀▀▀▄▄▄▀▀""")
 tab1,tab2 = st.tabs(["  Texte  ","  Image  "])
 with tab1 :
-	
 	with st.container() :
 		messages = st.container(height=425)
 		if question := st.chat_input("Question"):
@@ -112,11 +115,14 @@ with tab1 :
 			st.toast('En cours de génération ...')
 			with messages.chat_message("assistant",avatar="Icon/robot.gif"):
 				with st.spinner(""):
-					response = g4f.ChatCompletion.create(
-						model="inflection",
-						provider=g4f.Provider.Pi,
-						messages=st.session_state.historique,
-					)
+					body = {
+						"model": "gpt-3.5-turbo-16k",
+    					"stream": False,
+    					"messages": st.session_state.historique,
+						}
+				json_response = requests.post(url, json=body).json().get('choices', [])
+				response = (for choice in json_response:
+				print(choice.get('message', {}).get('content', '')))
 				st.write(response)
 			st.session_state.historique.append({"role": "assistant", "content": response})
 			st.toast('Terminé :smile:')
