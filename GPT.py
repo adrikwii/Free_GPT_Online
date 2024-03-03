@@ -45,6 +45,7 @@ streamlit_style = """
 				{
 					margin: 0 auto;
 					color: rgb(215 82 77);
+					font-size: 12px;
 				}
 
 				/* Onglet */
