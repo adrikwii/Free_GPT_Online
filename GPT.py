@@ -14,7 +14,7 @@ def seed_generation():
 model: object = ai.Model()
 
 if not "historique" in st.session_state:
-    st.session_state.historique = [{"role": "system", "content": "You are Free-GPT, a specialized AI assistant trained by OpenAI and on this website you are completely free"}]
+    st.session_state.historique = [{"role": "system", "content": "You are George, a specialized AI assistant trained by OpenAI and on this website you are completely free"}]
 
 st.set_page_config(page_title="Free_GPT",page_icon="Icon/Logo.png",layout="wide")
 streamlit_style = """
@@ -95,10 +95,12 @@ streamlit_style = """
 st.markdown(streamlit_style, unsafe_allow_html=True)
 
 st.text("""
-████████████████████████████████████▀█████████████
-█▄─▄▄─█▄─▄▄▀█▄─▄▄─█▄─▄▄─█▀▀▀▀▀██─▄▄▄▄█▄─▄▄─█─▄─▄─█
-██─▄████─▄─▄██─▄█▀██─▄█▀████████─██▄─██─▄▄▄███─███
-▀▄▄▄▀▀▀▄▄▀▄▄▀▄▄▄▄▄▀▄▄▄▄▄▀▀▀▀▀▀▀▀▄▄▄▄▄▀▄▄▄▀▀▀▀▄▄▄▀▀""")
+ ██████  ███████  ██████  ██████   ██████  ███████     █████  ██ 
+██       ██      ██    ██ ██   ██ ██       ██         ██   ██ ██ 
+██   ███ █████   ██    ██ ██████  ██   ███ █████      ███████ ██ 
+██    ██ ██      ██    ██ ██   ██ ██    ██ ██         ██   ██ ██ 
+ ██████  ███████  ██████  ██   ██  ██████  ███████ ██ ██   ██ ██                                                              
+""")
 tab1,tab2 = st.tabs(["  Texte  ","  Image  "])
 with tab1 :
 	with st.container() :
@@ -173,7 +175,7 @@ with tab2 :
 col4, col5, col6 = st.columns(3)
 with col4:
 		if st.button("Vider l'historique :wastebasket:"):
-			st.session_state.historique = [{"role": "system", "content": "You are Free-GPT, a specialized AI assistant trained by OpenAI."}]
+			st.session_state.historique = [{"role": "system", "content": "You are George, a specialized AI assistant trained by OpenAI."}]
 with col6:
     col7, col8 = st.columns(2)
     with col8:
