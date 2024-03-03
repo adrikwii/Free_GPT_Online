@@ -173,7 +173,8 @@ with tab2 :
 						st.error("Veuillez réessayer", icon="🚨")
 					else :
 						time.sleep(6)
-						st.image(url,width=300)
+						if st.image(url,width=300):
+							Image.open(url)
 			st.toast('Terminé :smile:')
 col4, col5, col6 = st.columns(3)
 with col4:
