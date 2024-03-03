@@ -147,11 +147,12 @@ with tab2 :
 			largeur = st.slider('Select width :',0,1920,value=960)
 			hauteur = st.slider('Select height :',0,1080,value=540)
 			col_btn, col_seed = st.columns(2)
-			with col_btn:
-				st.button('Random seed',on_click=seed_generation())
-			graine = i
-			with col_seed:
-				st.write(f'Seed : {graine}')
+			with st.container :
+				with col_btn:
+					st.button('Random seed',on_click=seed_generation())
+				graine = i
+				with col_seed:
+					st.write(f'Seed : {graine}')
 	with ai_col:
 		Image = st.container(height=425)
 		if generationPic := st.chat_input("Image"):
