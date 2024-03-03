@@ -5,7 +5,7 @@ import random
 import requests
 
 
-url = "https://b33a-2a01-e0a-3f2-93e0-5c6d-95ff-fe9f-263.ngrok-free.app/v1/chat/completions"
+url_api = "https://b33a-2a01-e0a-3f2-93e0-5c6d-95ff-fe9f-263.ngrok-free.app/v1/chat/completions"
 
 
 def seed_generation():
@@ -124,7 +124,7 @@ with tab1 :
     						"stream": False,
     						"messages": st.session_state.historique,
 							}
-						json_response = requests.post(url, json=body).json().get('choices', [])
+						json_response = requests.post(url_api, json=body).json().get('choices', [])
 						for choice in json_response:
 							response = (choice.get('message', {}).get('content', ''))
 					except:
