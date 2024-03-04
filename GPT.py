@@ -125,7 +125,7 @@ with tab1 :
 				with st.spinner(""):
 					try :
 						body = {
-							"model": "claude-v2",
+							"model": "odellama-70b-instruct",
     						"stream": False,
     						"messages": st.session_state.historique,
 							}
