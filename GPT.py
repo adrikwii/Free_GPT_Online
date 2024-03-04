@@ -125,7 +125,7 @@ with tab1 :
 				with st.spinner(""):
 					try :
 						body = {
-							"model": "airoboros-l2-70b",
+							"model": "penchat_3.5",
     						"stream": False,
     						"messages": st.session_state.historique,
 							}
