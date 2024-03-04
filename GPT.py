@@ -125,7 +125,7 @@ with tab1 :
 				with st.spinner(""):
 					try :
 						body = {
-							"model": "penchat_3.5",
+							"model": "openchat_3.5",
     						"stream": False,
     						"messages": st.session_state.historique,
 							}
