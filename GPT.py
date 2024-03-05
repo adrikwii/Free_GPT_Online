@@ -174,7 +174,6 @@ with tab2 :
 							seed=graine
 						)
 						url = f'https://pollinations.ai/prompt/{Generation.prompt}?model={ai_model}&width={largeur}&height={hauteur}&seed={graine}'
-						print(ai.cooldown)
 					except :
 						st.error("Veuillez réessayer", icon="🚨")
 					else :
