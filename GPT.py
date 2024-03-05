@@ -125,7 +125,7 @@ with tab1 :
 				with st.spinner(""):
 					try :
 						body = {
-							"model": "gpt-4-turbo",
+							"model": "gpt-4",
     						"stream": False,
     						"messages": st.session_state.historique,
 							}
