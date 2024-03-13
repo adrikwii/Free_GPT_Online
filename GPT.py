@@ -108,6 +108,10 @@ streamlit_style = """
 				{
 					background-color: #363333;
 				}
+    				[class="st-emotion-cache-r421ms e1f1d6gn0"]
+				{
+					background-color: #363333;
+				}
 			</style>
 			"""
 st.markdown(streamlit_style, unsafe_allow_html=True)
