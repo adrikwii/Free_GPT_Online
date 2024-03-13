@@ -78,6 +78,10 @@ streamlit_style = """
 				{
     					background-color: #363333;	
 				}
+    				[class="st-emotion-cache-eqffof e1nzilvr5"]
+				{
+    					color: white;
+				}
 
 				/* Div Question utilisateur */
 				[class="stChatMessage st-emotion-cache-janbn0 eeusbqq4"]
