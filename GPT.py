@@ -88,6 +88,10 @@ streamlit_style = """
 				{
 					background-color: rgb(35 37 44);
 				}
+    				[class="st-emotion-cache-s1k4sy e1d2x3se3"]
+				{
+					background-color: rgb(35 37 44);
+				}
 				/* Img Bot User */
 				[class="st-emotion-cache-p4micv eeusbqq0"]
 				{
