@@ -59,7 +59,7 @@ streamlit_style = """
 				{
 					font-size:25px;
 				}
-    				.st-emotion-cache-l9bjmx e1nzilvr5 p
+    				.st-emotion-cache-l9bjmx p
 				{
 					font-size:25px;
 				}
