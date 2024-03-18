@@ -198,7 +198,7 @@ with tab2 :
 							height=hauteur,
 							seed=graine
 						)
-						url = f'https://pollinations.ai/prompt/{Generation.prompt}?model={ai_model}&width={largeur}&height={hauteur}&seed={graine}'
+						url = f'https://image.pollinations.ai/prompt/{Generation.prompt}?model={ai_model}&width={largeur}&height={hauteur}&seed={graine}'
 					except :
 						st.error("Veuillez réessayer", icon="🚨")
 					else :
