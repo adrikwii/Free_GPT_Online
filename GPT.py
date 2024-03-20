@@ -83,11 +83,15 @@ streamlit_style = """
 				{
 					background-color: #363333;
 				}
-    				[class="st-emotion-cache-3ks77i e1f1d6gn0"]
+    			[class="st-emotion-cache-3ks77i e1f1d6gn0"]
 				{
     					background-color: #363333;	
 				}
-    				[class="st-emotion-cache-eqffof e1nzilvr5"]
+				[class="stChatMessage st-emotion-cache-1c7y2kd eeusbqq4"]
+				{
+					background-color: rgb(35 37 44);
+				}
+    			[class="st-emotion-cache-eqffof e1nzilvr5"]
 				{
     					color: white;
 				}
