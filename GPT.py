@@ -101,7 +101,7 @@ streamlit_style = """
 				{
 					background-color: rgb(35 37 44);
 				}
-				[class="st-ay st-dg st-b5 st-b7 st-b6 st-b8 st-b9 st-bb st-ba st-bc st-bi st-cg st-ed st-dc st-cn st-ee st-ef st-eg st-eh st-ei st-bp st-ce st-br st-cf st-bt st-bu st-c1 st-ej st-ek st-el st-di st-es"]
+				[class="st-c1"]
 				{
 					color : white;
 				}
