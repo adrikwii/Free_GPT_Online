@@ -100,6 +100,7 @@ streamlit_style = """
     				[class="st-emotion-cache-s1k4sy e1d2x3se3"]
 				{
 					background-color: rgb(35 37 44);
+					color: white;
 				}
 				[class="st-ay st-cy st-b5 st-b7 st-b6 st-b8 st-b9 st-bb st-ba st-bc st-bi st-d1 st-d4 st-d5 st-d6 st-d7 st-d8 st-d9 st-da st-db st-bp st-d3 st-br st-dc st-bt st-bu st-c1 st-dd st-de st-df st-dg st-es"]
 				{
