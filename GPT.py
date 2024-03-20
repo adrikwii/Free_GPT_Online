@@ -22,7 +22,6 @@ streamlit_style = """
 				/* Header */
 				[data-testID="stHeader"]
 				{
-					background-color: rgba(0, 0, 0, 0);
 				}
 				/* Scroll Bar */
 				[class="main st-emotion-cache-uf99v8 ea3mdgi8"]
