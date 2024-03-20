@@ -101,7 +101,7 @@ streamlit_style = """
 				{
 					background-color: rgb(35 37 44);
 				}
-				[class="st-br"]
+				[class="st-d3"]
 				{
 					color : white;
 				}
