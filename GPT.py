@@ -101,6 +101,10 @@ streamlit_style = """
 				{
 					background-color: rgb(35 37 44);
 				}
+				[class="st-ay st-cy st-b5 st-b7 st-b6 st-b8 st-b9 st-bb st-ba st-bc st-bi st-d1 st-d4 st-d5 st-d6 st-d7 st-d8 st-d9 st-da st-db st-bp st-d3 st-br st-dc st-bt st-bu st-c1 st-dd st-de st-df st-dg st-es"]
+				{
+					color: white;
+				}
 				/* Img Bot User */
 				[class="st-emotion-cache-p4micv eeusbqq0"]
 				{
@@ -120,6 +124,16 @@ streamlit_style = """
     				[class="st-emotion-cache-r421ms e1f1d6gn0"]
 				{
 					background-color: #363333;
+				}
+				/* Clear Button */
+				[class="st-emotion-cache-7ym5gk ef3psqc12"]
+				{
+					background-color : rgb(19, 23, 32);
+				}
+				
+				[class="st-emotion-cache-10fz3ls e1nzilvr5"]
+				{
+					color: rgba(355, 355, 355);
 				}
 			</style>
 			"""
