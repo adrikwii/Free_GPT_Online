@@ -15,8 +15,8 @@ model: object = ai.Model()
 
 if not "historique" in st.session_state:
     st.session_state.historique = [{"role": "system", "content": "You are George, a specialized AI assistant trained by OpenAI and on this website you are completely free"}]
-st.write("[Code source](https://github.com/adrikwii/Free_GPT_Online/blob/main/GPT.py)")
 st.set_page_config(page_title="Free_GPT",page_icon="Icon/Logo.png",layout="wide")
+st.write("[Code source](https://github.com/adrikwii/Free_GPT_Online/blob/main/GPT.py)")
 streamlit_style = """
 			<style>
 				/* Header */
