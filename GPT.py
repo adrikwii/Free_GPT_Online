@@ -230,5 +230,6 @@ with col4:
 with col6:
     col7, col8 = st.columns(2)
     with col8:
-        st.write("Dévelopé par [adrikwii](https://github.com/adrikwii) // [Code source](https://github.com/adrikwii/Free_GPT_Online/blob/main/GPT.py)")
+        st.write("""Dévelopé par [adrikwii](https://github.com/adrikwii)
+		[Code source](https://github.com/adrikwii/Free_GPT_Online/blob/main/GPT.py)""")
     
