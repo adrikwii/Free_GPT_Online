@@ -227,7 +227,6 @@ with col4:
 		if st.button("Clear history  :wastebasket:"):
 			st.session_state.historique = [{"role": "system", "content": "You are George, a specialized AI assistant trained by OpenAI."}]
 with col6:
-	st.write("[Code source](https://github.com/adrikwii/Free_GPT_Online/blob/main/GPT.py)")
     col7, col8 = st.columns(2)
     with col8:
         st.write("Dévelopé par [adrikwii](https://github.com/adrikwii)")
