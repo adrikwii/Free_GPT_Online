@@ -7,6 +7,6 @@ Pour la génération d'image le projet utilise [pollination.ai](https://pollinat
 
 ## Lien vers l'application
 
-- [FreeGPT](https://george-ai.streamlit.app/)
+- [George.ai](https://george-ai.streamlit.app/)
 <img src="Icon/Page_exemple.png" data-canonical-src="Icon/Page_exemple.png"/>
 
