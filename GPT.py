@@ -168,7 +168,7 @@ with tab1 :
 					try :
 						body = {
 							"model": "gpt-3.5-turbo-16k",
-    							"stream": False,
+    							"stream": True,
     							"messages": st.session_state.historique,
 						}
 						json_response = requests.post(url_api, json=body).json().get('choices', [])
