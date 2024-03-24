@@ -4,6 +4,9 @@
 Ce projet permet d'utiliser totalement gratuitement Chat GPT à l'aide du projet suivant [G4F API](https://github.com/xtekky/gpt4free) créé par [xtekky](https://github.com/xtekky).
 Pour la génération d'image le projet utilise [pollination.ai](https://pollinations.ai/).
 
+<h3 align="left">Langage utilisé :</h3>
+<p align="left"> <a href="https ://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg " alt="python" width="40" height="40"/> </a> </p>
+
 ## Lien vers l'application
 
 - [George.ai](https://george-ai.streamlit.app/)
@@ -19,13 +22,4 @@ Pour la génération d'image le projet utilise [pollination.ai](https://pollinat
 
 <p align ="gauche"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username =adrikwii" alt="adrikwii" /></a> </p>
 
-- 🔭 Je développe actuellement [George.ai](https://george-ai.streamlit.app/)
 
-<h3 align="left"> Connectez-vous avec moi :</h3>
-<p align="left">
-</p>
-
-<h3 align="left">Langues et outils :</h3>
-<p align="left"> <a href="https ://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg " alt="python" width="40" height="40"/> </a> </p>
-
-<p> <img align="center" src="https://github-readme-stats .vercel.app/api?username=adrikwii&show_icons=true&locale=en" alt="adrikwii" /></p>
