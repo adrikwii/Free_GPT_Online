@@ -1,5 +1,5 @@
 ## <img src="Icon/Logo.png" data-canonical-src="Icon/Logo.png" width="50" height="50"/>
-![Logo](Icon/Logo.png)
+![Logo](Icon/George.AI.jpg)
 
  
 Ce projet permet d'utiliser totalement gratuitement Chat GPT à l'aide du projet suivant [G4F API](https://github.com/xtekky/gpt4free) créé par [xtekky](https://github.com/xtekky).
