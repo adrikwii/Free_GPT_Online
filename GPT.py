@@ -167,7 +167,7 @@ with tab1 :
 				with st.spinner(""):
 					try :
 						body = {
-							"model": "gpt-3.5-long",
+							"model": "codellama-70b-instruct",
     							"stream": False,
     							"messages": st.session_state.historique,
 						}
