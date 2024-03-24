@@ -5,12 +5,12 @@ Ce projet permet d'utiliser totalement gratuitement Chat GPT à l'aide du projet
 Pour la génération d'image le projet utilise [pollination.ai](https://pollinations.ai/).
 
 <h3 align="left">Langage utilisé :</h3>
-- <p align="right"> <a href="https ://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg " alt="python" width="40" height="40"/> </a> </p>
+- <p align="left"> <a href="https ://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg " alt="python" width="40" height="40"/> </a> </p>
 
 ## Lien vers l'application
 
 - [George.ai](https://george-ai.streamlit.app/)
-- <img src="https://help.apple.com/assets/645D5D228BE0233D28263F4B/645D5D258BE0233D28263F5A/fr_FR/d230a25cb974f8908871af04caad89a1.png" data-canonical-src="https://www.icloud.com/shortcuts/95a2d49a6d5848959f7253bf89ca1a53" width="50" height="50"/>[George.ai shortcut apple](https://www.icloud.com/shortcuts/95a2d49a6d5848959f7253bf89ca1a53)
+- <img src="https://help.apple.com/assets/645D5D228BE0233D28263F4B/645D5D258BE0233D28263F5A/fr_FR/d230a25cb974f8908871af04caad89a1.png" data-canonical-src="https://www.icloud.com/shortcuts/95a2d49a6d5848959f7253bf89ca1a53" width="25" height="25"/>[George.ai shortcut apple](https://www.icloud.com/shortcuts/95a2d49a6d5848959f7253bf89ca1a53)
 ## Page principale :
 <img src="Icon/Page_exemple.png" data-canonical-src="Icon/Page_exemple.png"/>
 
