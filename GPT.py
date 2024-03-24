@@ -167,7 +167,7 @@ with tab1 :
 				with st.spinner(""):
 					try :
 						body = {
-							"model": "llama2-7b",
+							"model": "dolphin-mixtral-8x7b",
     							"stream": False,
     							"messages": st.session_state.historique,
 						}
