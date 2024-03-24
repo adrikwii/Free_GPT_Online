@@ -1,4 +1,3 @@
-## <img src="Icon/Logo.png" data-canonical-src="Icon/Logo.png" width="50" height="50"/>
 ![Logo](Icon/George.AI.jpg)
 
  
