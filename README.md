@@ -13,3 +13,19 @@ Pour la génération d'image le projet utilise [pollination.ai](https://pollinat
 
 ## Page génération d'image :
 <img src="Icon/Page_exemple_img.png" data-canonical-src="Icon/Page_exemple_img.png"/>
+
+
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=adrikwii&label=Profile%20views&color=0e75b6&style=flat" alt="adrikwii" /> </p>
+
+<p align ="gauche"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username =adrikwii" alt="adrikwii" /></a> </p>
+
+- 🔭 Je développe actuellement [George.ai](https://george-ai.streamlit.app/)
+
+<h3 align="left"> Connectez-vous avec moi :</h3>
+<p align="left">
+</p>
+
+<h3 align="left">Langues et outils :</h3>
+<p align="left"> <a href="https ://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg " alt="python" width="40" height="40"/> </a> </p>
+
+<p> <img align="center" src="https://github-readme-stats .vercel.app/api?username=adrikwii&show_icons=true&locale=en" alt="adrikwii" /></p>
