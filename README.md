@@ -4,7 +4,7 @@
 Ce projet permet d'utiliser totalement gratuitement Chat GPT à l'aide du projet suivant [G4F API](https://github.com/xtekky/gpt4free) créé par [xtekky](https://github.com/xtekky).
 Pour la génération d'image le projet utilise [pollination.ai](https://pollinations.ai/).
 
-<h3 align="left">Langage utilisé :</h3>
+<h3 align="left">Language utilisé :</h3>
 <p align="left"> <a href="https ://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg " alt="python" width="40" height="40"/> </a> </p>
 
 ## Lien vers l'application
