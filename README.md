@@ -20,6 +20,4 @@ Pour la génération d'image le projet utilise [pollination.ai](https://pollinat
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=adrikwii&label=Profile%20views&color=0e75b6&style=flat" alt="adrikwii" /> </p>
 
-<p align ="gauche"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username =adrikwii" alt="adrikwii" /></a> </p>
-
 
