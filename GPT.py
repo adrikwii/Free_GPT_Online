@@ -167,7 +167,7 @@ with tab1 :
 				with st.spinner(""):
 					try :
 						body = {
-							"model": "lzlv-70b",
+							"model": "claude-v2",
     							"stream": False,
     							"messages": st.session_state.historique,
 						}
