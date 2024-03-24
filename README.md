@@ -10,5 +10,6 @@ Pour la génération d'image le projet utilise [pollination.ai](https://pollinat
 - [George.ai](https://george-ai.streamlit.app/)
 ## Page principale :
 <img src="Icon/Page_exemple.png" data-canonical-src="Icon/Page_exemple.png"/>
+
 ## Page génération d'image :
 <img src="Icon/Page_exemple_img.png" data-canonical-src="Icon/Page_exemple_img.png"/>
