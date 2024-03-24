@@ -5,7 +5,7 @@ Ce projet permet d'utiliser totalement gratuitement Chat GPT à l'aide du projet
 Pour la génération d'image le projet utilise [pollination.ai](https://pollinations.ai/).
 
 <h3 align="left">Langage utilisé :</h3>
-<p align="left"> - <a href="https ://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg " alt="python" width="40" height="40"/> </a> </p>
+<p align="left"> <a href="https ://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg " alt="python" width="40" height="40"/> </a> </p>
 
 ## Lien vers l'application
 
