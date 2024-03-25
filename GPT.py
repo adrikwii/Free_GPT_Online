@@ -224,7 +224,7 @@ with tab2 :
 						st.download_button(
 							label="download",
     						data=(requests.get(url).content),
-    						file_name='test.png',
+    						file_name= (generationPic.replace(" ","_")+".png"),
     						mime='image/png',
 							)
 			st.toast('Terminé :smile:')
