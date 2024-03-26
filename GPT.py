@@ -221,12 +221,13 @@ with tab2 :
 					else :
 						time.sleep(6)
 						st.image(url,width=300)
-						st.download_button(
+						download_button = st.download_button(
 							label="download",
     						data=(requests.get(url).content),
     						file_name= (generationPic.replace(" ","_")+".png"),
     						mime='image/png',
 							)
+						st.markdown(download_button, unsafe_allow_html=True)
 			st.toast('Terminé :smile:')
 col4, col5, col6 = st.columns(3)
 with col4:
