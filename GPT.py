@@ -119,6 +119,11 @@ streamlit_style = """
 					position: static;
     				margin-left: 310px;
 				}
+    				[class="st-emotion-cache-6awftf e1vs0wn31"]
+				{
+					position: static;
+    					margin-left: 310px;
+				}
 
 				[class="st-emotion-cache-1xw8zd0 e1f1d6gn0"]
 				{
